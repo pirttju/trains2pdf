@@ -1,0 +1,6376 @@
+[
+  {
+    "table_id": "1",
+    "title_fi": "Helsinki–Turku",
+    "title_sv": "Helsingfors–Åbo",
+    "filter_groups": [
+      [
+        "KKN",
+        "KR",
+        "SLO",
+        "KUT",
+        "TKU",
+        "TUS"
+      ]
+    ],
+    "include_commuter": true,
+    "rows": [
+      {
+        "station": "HKI",
+        "km": 0,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "PSL",
+        "km": 3,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "EPO",
+        "km": 20,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "KKN",
+        "km": 38,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "KR",
+        "km": 87,
+        "arrival": true,
+        "connection": false
+      },
+      {
+        "station": "KR",
+        "km": 87,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "SLO",
+        "km": 138,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "KUT",
+        "km": 190,
+        "arrival": true,
+        "connection": false
+      },
+      {
+        "station": "TKU",
+        "km": 194,
+        "arrival": true,
+        "connection": false
+      },
+      {
+        "station": "TPE",
+        "km": 168,
+        "arrival": true,
+        "connection": true
+      },
+      {
+        "station": "TKU",
+        "km": 194,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "TUS",
+        "km": 197,
+        "arrival": true,
+        "connection": false
+      }
+    ]
+  },
+  {
+    "table_id": "1",
+    "title_fi": "Turku–Helsinki",
+    "title_sv": "Åbo–Helsingfors",
+    "filter_groups": [
+      [
+        "KKN",
+        "KR",
+        "SLO",
+        "KUT",
+        "TKU",
+        "TUS"
+      ]
+    ],
+    "include_commuter": true,
+    "rows": [
+      {
+        "station": "TUS",
+        "km": 0,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "TKU",
+        "km": 3,
+        "arrival": true,
+        "connection": false
+      },
+      {
+        "station": "TPE",
+        "km": 168,
+        "arrival": false,
+        "connection": true
+      },
+      {
+        "station": "TKU",
+        "km": 3,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "KUT",
+        "km": 7,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "SLO",
+        "km": 59,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "KR",
+        "km": 110,
+        "arrival": true,
+        "connection": false
+      },
+      {
+        "station": "KR",
+        "km": 110,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "KKN",
+        "km": 159,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "EPO",
+        "km": 177,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "PSL",
+        "km": 194,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "HKI",
+        "km": 197,
+        "arrival": true,
+        "connection": false
+      }
+    ]
+  },
+  {
+    "table_id": "2",
+    "title_fi": "Helsinki–Karjaa–Hanko",
+    "title_sv": "Helsingfors–Karis–Hangö",
+    "filter_groups": [
+      [
+        "HKI",
+        "STI",
+        "IKO",
+        "KR",
+        "DRA",
+        "TMS",
+        "SGY",
+        "LPO",
+        "STA",
+        "HKP",
+        "HNK"
+      ]
+    ],
+    "include_commuter": true,
+    "rows": [
+      {
+        "station": "HKI",
+        "km": 0,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "PSL",
+        "km": 3,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "HPL",
+        "km": 6,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "LPV",
+        "km": 11,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "EPO",
+        "km": 20,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "KLH",
+        "km": 24,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "MAS",
+        "km": 30,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "KKN",
+        "km": 38,
+        "arrival": true,
+        "connection": false
+      },
+      {
+        "station": "KKN",
+        "km": 38,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "STI",
+        "km": 52,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "IKO",
+        "km": 70,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "KR",
+        "km": 87,
+        "arrival": true,
+        "connection": false
+      },
+      {
+        "station": "TKU",
+        "km": 107,
+        "arrival": false,
+        "connection": true
+      },
+      {
+        "station": "KR",
+        "km": 87,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "DRA",
+        "km": 100,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "TMS",
+        "km": 103,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "SGY",
+        "km": 114,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "LPO",
+        "km": 119,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "STA",
+        "km": 126,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "HKP",
+        "km": 135,
+        "arrival": true,
+        "connection": false
+      },
+      {
+        "station": "HNK",
+        "km": 137,
+        "arrival": true,
+        "connection": false
+      }
+    ]
+  },
+  {
+    "table_id": "2",
+    "title_fi": "Hanko–Karjaa–Helsinki",
+    "title_sv": "Hangö–Karis–Helsingfors",
+    "filter_groups": [
+      [
+        "HKI",
+        "STI",
+        "IKO",
+        "KR",
+        "DRA",
+        "TMS",
+        "SGY",
+        "LPO",
+        "STA",
+        "HKP",
+        "HNK"
+      ]
+    ],
+    "include_commuter": true,
+    "rows": [
+      {
+        "station": "HNK",
+        "km": 0,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "HKP",
+        "km": 2,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "STA",
+        "km": 11,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "LPO",
+        "km": 18,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "SGY",
+        "km": 23,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "TMS",
+        "km": 34,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "DRA",
+        "km": 37,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "KR",
+        "km": 50,
+        "arrival": true,
+        "connection": false
+      },
+      {
+        "station": "TKU",
+        "km": 107,
+        "arrival": true,
+        "connection": true
+      },
+      {
+        "station": "KR",
+        "km": 50,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "IKO",
+        "km": 67,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "STI",
+        "km": 85,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "KKN",
+        "km": 99,
+        "arrival": true,
+        "connection": false
+      },
+      {
+        "station": "KKN",
+        "km": 99,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "MAS",
+        "km": 107,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "KLH",
+        "km": 113,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "EPO",
+        "km": 117,
+        "arrival": true,
+        "connection": false
+      },
+      {
+        "station": "LPV",
+        "km": 126,
+        "arrival": true,
+        "connection": false
+      },
+      {
+        "station": "HPL",
+        "km": 131,
+        "arrival": true,
+        "connection": false
+      },
+      {
+        "station": "PSL",
+        "km": 134,
+        "arrival": true,
+        "connection": false
+      },
+      {
+        "station": "HKI",
+        "km": 137,
+        "arrival": true,
+        "connection": false
+      }
+    ]
+  },
+  {
+    "table_id": "3",
+    "title_fi": "Helsinki–Tampere",
+    "title_sv": "Helsingfors–Tammerfors",
+    "filter_groups": [
+      [
+        "TKL",
+        "RI",
+        "HL",
+        "TL",
+        "TPE"
+      ]
+    ],
+    "include_commuter": true,
+    "rows": [
+      {
+        "station": "HKI",
+        "km": 0,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "PSL",
+        "km": 3,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "TKL",
+        "km": 16,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "KE",
+        "km": 29,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "JP",
+        "km": 37,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "HY",
+        "km": 59,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "RI",
+        "km": 71,
+        "arrival": true,
+        "connection": false
+      },
+      {
+        "station": "RI",
+        "km": 71,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "RY",
+        "km": 81,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "TU",
+        "km": 94,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "HL",
+        "km": 108,
+        "arrival": true,
+        "connection": false
+      },
+      {
+        "station": "HL",
+        "km": 108,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "PRL",
+        "km": 116,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "ITA",
+        "km": 129,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "TL",
+        "km": 147,
+        "arrival": true,
+        "connection": false
+      },
+      {
+        "station": "TL",
+        "km": 147,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "VIA",
+        "km": 154,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "LPÄ",
+        "km": 166,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "TPE",
+        "km": 187,
+        "arrival": true,
+        "connection": false
+      }
+    ]
+  },
+  {
+    "table_id": "3",
+    "title_fi": "Tampere–Helsinki",
+    "title_sv": "Tammerfors–Helsingfors",
+    "filter_groups": [
+      [
+        "TKL",
+        "RI",
+        "HL",
+        "TL",
+        "TPE"
+      ]
+    ],
+    "include_commuter": true,
+    "rows": [
+      {
+        "station": "TPE",
+        "km": 0,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "LPÄ",
+        "km": 21,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "VIA",
+        "km": 33,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "TL",
+        "km": 40,
+        "arrival": true,
+        "connection": false
+      },
+      {
+        "station": "TL",
+        "km": 40,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "ITA",
+        "km": 58,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "PRL",
+        "km": 71,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "HL",
+        "km": 79,
+        "arrival": true,
+        "connection": false
+      },
+      {
+        "station": "HL",
+        "km": 79,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "TU",
+        "km": 93,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "RY",
+        "km": 106,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "RI",
+        "km": 116,
+        "arrival": true,
+        "connection": false
+      },
+      {
+        "station": "RI",
+        "km": 116,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "HY",
+        "km": 128,
+        "arrival": true,
+        "connection": false
+      },
+      {
+        "station": "JP",
+        "km": 150,
+        "arrival": true,
+        "connection": false
+      },
+      {
+        "station": "KE",
+        "km": 158,
+        "arrival": true,
+        "connection": false
+      },
+      {
+        "station": "TKL",
+        "km": 171,
+        "arrival": true,
+        "connection": false
+      },
+      {
+        "station": "PSL",
+        "km": 184,
+        "arrival": true,
+        "connection": false
+      },
+      {
+        "station": "HKI",
+        "km": 187,
+        "arrival": true,
+        "connection": false
+      }
+    ]
+  },
+  {
+    "table_id": "4",
+    "title_fi": "Helsinki–Pori",
+    "title_sv": "Helsingfors–Björneborg",
+    "filter_groups": [
+      [
+        "TKL",
+        "TPE",
+        "TSO",
+        "NOA",
+        "KRU",
+        "VMA",
+        "KKI",
+        "HVA",
+        "PRI"
+      ]
+    ],
+    "include_commuter": true,
+    "rows": [
+      {
+        "station": "HKI",
+        "km": 0,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "PSL",
+        "km": 3,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "TKL",
+        "km": 16,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "KE",
+        "km": 29,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "JP",
+        "km": 37,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "HY",
+        "km": 59,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "RI",
+        "km": 71,
+        "arrival": true,
+        "connection": false
+      },
+      {
+        "station": "RI",
+        "km": 71,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "HL",
+        "km": 108,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "TL",
+        "km": 147,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "TPE",
+        "km": 187,
+        "arrival": true,
+        "connection": false
+      },
+      {
+        "station": "ROI",
+        "km": 713,
+        "arrival": false,
+        "connection": true
+      },
+      {
+        "station": "OL",
+        "km": 493,
+        "arrival": false,
+        "connection": true
+      },
+      {
+        "station": "SK",
+        "km": 159,
+        "arrival": false,
+        "connection": true
+      },
+      {
+        "station": "PM",
+        "km": 235,
+        "arrival": false,
+        "connection": true
+      },
+      {
+        "station": "JY",
+        "km": 155,
+        "arrival": false,
+        "connection": true
+      },
+      {
+        "station": "TPE",
+        "km": 187,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "TSO",
+        "km": 196,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "NOA",
+        "km": 204,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "KRU",
+        "km": 231,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "VMA",
+        "km": 246,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "KKI",
+        "km": 284,
+        "arrival": true,
+        "connection": false
+      },
+      {
+        "station": "KKI",
+        "km": 284,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "HVA",
+        "km": 296,
+        "arrival": true,
+        "connection": false
+      },
+      {
+        "station": "PRI",
+        "km": 322,
+        "arrival": true,
+        "connection": false
+      }
+    ]
+  },
+  {
+    "table_id": "4",
+    "title_fi": "Pori–Helsinki",
+    "title_sv": "Björneborg–Helsingfors",
+    "filter_groups": [
+      [
+        "TKL",
+        "TPE",
+        "TSO",
+        "NOA",
+        "KRU",
+        "VMA",
+        "KKI",
+        "HVA",
+        "PRI"
+      ]
+    ],
+    "include_commuter": true,
+    "rows": [
+      {
+        "station": "PRI",
+        "km": 0,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "HVA",
+        "km": 26,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "KKI",
+        "km": 38,
+        "arrival": true,
+        "connection": false
+      },
+      {
+        "station": "KKI",
+        "km": 38,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "VMA",
+        "km": 76,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "KRU",
+        "km": 91,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "NOA",
+        "km": 118,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "TSO",
+        "km": 126,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "TPE",
+        "km": 135,
+        "arrival": true,
+        "connection": false
+      },
+      {
+        "station": "JY",
+        "km": 155,
+        "arrival": true,
+        "connection": true
+      },
+      {
+        "station": "PM",
+        "km": 235,
+        "arrival": true,
+        "connection": true
+      },
+      {
+        "station": "SK",
+        "km": 159,
+        "arrival": true,
+        "connection": true
+      },
+      {
+        "station": "OL",
+        "km": 493,
+        "arrival": true,
+        "connection": true
+      },
+      {
+        "station": "ROI",
+        "km": 713,
+        "arrival": true,
+        "connection": true
+      },
+      {
+        "station": "TPE",
+        "km": 135,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "TL",
+        "km": 175,
+        "arrival": true,
+        "connection": false
+      },
+      {
+        "station": "HL",
+        "km": 214,
+        "arrival": true,
+        "connection": false
+      },
+      {
+        "station": "RI",
+        "km": 251,
+        "arrival": true,
+        "connection": false
+      },
+      {
+        "station": "RI",
+        "km": 251,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "HY",
+        "km": 263,
+        "arrival": true,
+        "connection": false
+      },
+      {
+        "station": "JP",
+        "km": 285,
+        "arrival": true,
+        "connection": false
+      },
+      {
+        "station": "KE",
+        "km": 293,
+        "arrival": true,
+        "connection": false
+      },
+      {
+        "station": "TKL",
+        "km": 306,
+        "arrival": true,
+        "connection": false
+      },
+      {
+        "station": "PSL",
+        "km": 319,
+        "arrival": true,
+        "connection": false
+      },
+      {
+        "station": "HKI",
+        "km": 322,
+        "arrival": true,
+        "connection": false
+      }
+    ]
+  },
+  {
+    "table_id": "4A",
+    "title_fi": "Kokemäki–Rauma",
+    "title_sv": "Kumo–Raumo",
+    "filter_groups": [
+      [
+        "KKI",
+        "RAK"
+      ]
+    ],
+    "include_commuter": true,
+    "rows": [
+      {
+        "station": "KKI",
+        "km": 0,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "RAK",
+        "km": 46,
+        "arrival": true,
+        "connection": false
+      }
+    ]
+  },
+  {
+    "table_id": "4A",
+    "title_fi": "Rauma–Kokemäki",
+    "title_sv": "Raumo–Kumo",
+    "filter_groups": [
+      [
+        "KKI",
+        "RAK"
+      ]
+    ],
+    "include_commuter": true,
+    "rows": [
+      {
+        "station": "RAK",
+        "km": 0,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "KKI",
+        "km": 46,
+        "arrival": true,
+        "connection": false
+      }
+    ]
+  },
+  {
+    "table_id": "5",
+    "title_fi": "Helsinki–Seinäjoki–Vaasa",
+    "title_sv": "Helsingfors–Seinäjoki–Vasa",
+    "filter_groups": [
+      [
+        "TPE",
+        "PKO",
+        "SK",
+        "VS"
+      ]
+    ],
+    "include_commuter": true,
+    "rows": [
+      {
+        "station": "HKI",
+        "km": 0,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "PSL",
+        "km": 3,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "TKL",
+        "km": 16,
+        "arrival": true,
+        "connection": false
+      },
+      {
+        "station": "KV",
+        "km": 178,
+        "arrival": false,
+        "connection": true
+      },
+      {
+        "station": "TKL",
+        "km": 16,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "RI",
+        "km": 71,
+        "arrival": true,
+        "connection": false
+      },
+      {
+        "station": "RI",
+        "km": 71,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "HL",
+        "km": 108,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "TL",
+        "km": 147,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "TPE",
+        "km": 187,
+        "arrival": true,
+        "connection": false
+      },
+      {
+        "station": "TKU",
+        "km": 168,
+        "arrival": false,
+        "connection": true
+      },
+      {
+        "station": "TPE",
+        "km": 187,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "PKO",
+        "km": 262,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "SK",
+        "km": 346,
+        "arrival": true,
+        "connection": false
+      },
+      {
+        "station": "ROI",
+        "km": 554,
+        "arrival": false,
+        "connection": true
+      },
+      {
+        "station": "OL",
+        "km": 334,
+        "arrival": false,
+        "connection": true
+      },
+      {
+        "station": "SK",
+        "km": 346,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "TK",
+        "km": 388,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "VS",
+        "km": 420,
+        "arrival": true,
+        "connection": false
+      }
+    ]
+  },
+  {
+    "table_id": "5",
+    "title_fi": "Vaasa–Seinäjoki–Helsinki",
+    "title_sv": "Vasa–Seinäjoki–Helsingfors",
+    "filter_groups": [
+      [
+        "TPE",
+        "PKO",
+        "SK",
+        "VS"
+      ]
+    ],
+    "include_commuter": true,
+    "rows": [
+      {
+        "station": "VS",
+        "km": 0,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "TK",
+        "km": 32,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "SK",
+        "km": 74,
+        "arrival": true,
+        "connection": false
+      },
+      {
+        "station": "OL",
+        "km": 334,
+        "arrival": true,
+        "connection": true
+      },
+      {
+        "station": "ROI",
+        "km": 554,
+        "arrival": true,
+        "connection": true
+      },
+      {
+        "station": "SK",
+        "km": 74,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "PKO",
+        "km": 158,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "TPE",
+        "km": 233,
+        "arrival": true,
+        "connection": false
+      },
+      {
+        "station": "TKU",
+        "km": 168,
+        "arrival": true,
+        "connection": true
+      },
+      {
+        "station": "TPE",
+        "km": 233,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "TL",
+        "km": 273,
+        "arrival": true,
+        "connection": false
+      },
+      {
+        "station": "HL",
+        "km": 312,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "RI",
+        "km": 349,
+        "arrival": true,
+        "connection": false
+      },
+      {
+        "station": "RI",
+        "km": 349,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "TKL",
+        "km": 404,
+        "arrival": true,
+        "connection": false
+      },
+      {
+        "station": "KV",
+        "km": 178,
+        "arrival": true,
+        "connection": true
+      },
+      {
+        "station": "TKL",
+        "km": 404,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "PSL",
+        "km": 417,
+        "arrival": true,
+        "connection": false
+      },
+      {
+        "station": "HKI",
+        "km": 420,
+        "arrival": true,
+        "connection": false
+      }
+    ]
+  },
+  {
+    "table_id": "6",
+    "title_fi": "Helsinki–Kemi–Kolari",
+    "title_sv": "Helsingfors–Kemi–Kolari",
+    "filter_groups": [
+      [
+        "KEM",
+        "TRI",
+        "YTR",
+        "PEL",
+        "KLI"
+      ]
+    ],
+    "include_commuter": true,
+    "rows": [
+      {
+        "station": "HKI",
+        "km": 0,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "PSL",
+        "km": 3,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "TKL",
+        "km": 16,
+        "arrival": true,
+        "connection": false
+      },
+      {
+        "station": "KV",
+        "km": 178,
+        "arrival": false,
+        "connection": true
+      },
+      {
+        "station": "TKL",
+        "km": 16,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "RI",
+        "km": 71,
+        "arrival": true,
+        "connection": false
+      },
+      {
+        "station": "RI",
+        "km": 71,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "HL",
+        "km": 108,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "TL",
+        "km": 147,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "TPE",
+        "km": 187,
+        "arrival": true,
+        "connection": false
+      },
+      {
+        "station": "TKU",
+        "km": 168,
+        "arrival": false,
+        "connection": true
+      },
+      {
+        "station": "TPE",
+        "km": 187,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "PKO",
+        "km": 262,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "SK",
+        "km": 346,
+        "arrival": true,
+        "connection": false
+      },
+      {
+        "station": "SK",
+        "km": 346,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "PNÄ",
+        "km": 446,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "KOK",
+        "km": 479,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "YV",
+        "km": 558,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "OU",
+        "km": 586,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "VTI",
+        "km": 612,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "KML",
+        "km": 668,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "OL",
+        "km": 680,
+        "arrival": true,
+        "connection": false
+      },
+      {
+        "station": "OL",
+        "km": 680,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "KEM",
+        "km": 786,
+        "arrival": true,
+        "connection": false
+      },
+      {
+        "station": "KEM",
+        "km": 811,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "TRI",
+        "km": 786,
+        "arrival": true,
+        "connection": false
+      },
+      {
+        "station": "YTR",
+        "km": 873,
+        "arrival": true,
+        "connection": false
+      },
+      {
+        "station": "PEL",
+        "km": 930,
+        "arrival": true,
+        "connection": false
+      },
+      {
+        "station": "KLI",
+        "km": 995,
+        "arrival": true,
+        "connection": false
+      }
+    ]
+  },
+  {
+    "table_id": "6",
+    "title_fi": "Kolari–Kemi–Helsinki",
+    "title_sv": "Kolari–Kemi–Helsingfors",
+    "filter_groups": [
+      [
+        "KEM",
+        "TRI",
+        "YTR",
+        "PEL",
+        "KLI"
+      ]
+    ],
+    "include_commuter": true,
+    "rows": [
+      {
+        "station": "KLI",
+        "km": 0,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "PEL",
+        "km": 65,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "YTR",
+        "km": 122,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "TRI",
+        "km": 184,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "KEM",
+        "km": 209,
+        "arrival": true,
+        "connection": false
+      },
+      {
+        "station": "KEM",
+        "km": 209,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "OL",
+        "km": 315,
+        "arrival": true,
+        "connection": false
+      },
+      {
+        "station": "OL",
+        "km": 315,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "KML",
+        "km": 327,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "RKI",
+        "km": 362,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "VTI",
+        "km": 383,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "OU",
+        "km": 409,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "YV",
+        "km": 437,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "KNS",
+        "km": 476,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "KOK",
+        "km": 516,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "PNÄ",
+        "km": 549,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "SK",
+        "km": 649,
+        "arrival": true,
+        "connection": false
+      },
+      {
+        "station": "SK",
+        "km": 649,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "PKO",
+        "km": 733,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "TPE",
+        "km": 808,
+        "arrival": true,
+        "connection": false
+      },
+      {
+        "station": "TKU",
+        "km": 168,
+        "arrival": true,
+        "connection": true
+      },
+      {
+        "station": "TPE",
+        "km": 808,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "TL",
+        "km": 848,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "HL",
+        "km": 887,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "RI",
+        "km": 924,
+        "arrival": true,
+        "connection": false
+      },
+      {
+        "station": "RI",
+        "km": 924,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "TKL",
+        "km": 979,
+        "arrival": true,
+        "connection": false
+      },
+      {
+        "station": "KV",
+        "km": 178,
+        "arrival": true,
+        "connection": true
+      },
+      {
+        "station": "TKL",
+        "km": 979,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "PSL",
+        "km": 992,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "HKI",
+        "km": 995,
+        "arrival": false,
+        "connection": false
+      }
+    ]
+  },
+  {
+    "table_id": "7",
+    "title_fi": "Helsinki–Seinäjoki–Oulu–Kemijärvi",
+    "title_sv": "Helsingfors–Seinäjoki–Uleåborg–Kemijärvi",
+    "filter_groups": [
+      [
+        "LPA",
+        "KHA",
+        "PNÄ",
+        "KOK",
+        "KNS",
+        "YV",
+        "OU",
+        "VTI",
+        "RKI",
+        "KML",
+        "OL",
+        "KEM",
+        "TRV",
+        "MUL",
+        "ROI",
+        "KJÄ"
+      ]
+    ],
+    "include_commuter": true,
+    "rows": [
+      {
+        "station": "HKI",
+        "km": 0,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "PSL",
+        "km": 3,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "TKL",
+        "km": 16,
+        "arrival": true,
+        "connection": false
+      },
+      {
+        "station": "KV",
+        "km": 178,
+        "arrival": false,
+        "connection": true
+      },
+      {
+        "station": "TKL",
+        "km": 16,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "RI",
+        "km": 71,
+        "arrival": true,
+        "connection": false
+      },
+      {
+        "station": "KE",
+        "km": 42,
+        "arrival": false,
+        "connection": true
+      },
+      {
+        "station": "JP",
+        "km": 34,
+        "arrival": false,
+        "connection": true
+      },
+      {
+        "station": "HY",
+        "km": 12,
+        "arrival": false,
+        "connection": true
+      },
+      {
+        "station": "RI",
+        "km": 71,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "HL",
+        "km": 108,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "TL",
+        "km": 147,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "TPE",
+        "km": 187,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "PRI",
+        "km": 135,
+        "arrival": false,
+        "connection": true
+      },
+      {
+        "station": "TPE",
+        "km": 187,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "PKO",
+        "km": 262,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "SK",
+        "km": 346,
+        "arrival": true,
+        "connection": false
+      },
+      {
+        "station": "JY",
+        "km": 196,
+        "arrival": false,
+        "connection": true
+      },
+      {
+        "station": "VS",
+        "km": 74,
+        "arrival": false,
+        "connection": true
+      },
+      {
+        "station": "SK",
+        "km": 346,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "LPA",
+        "km": 369,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "KHA",
+        "km": 383,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "PNÄ",
+        "km": 446,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "KOK",
+        "km": 479,
+        "arrival": true,
+        "connection": false
+      },
+      {
+        "station": "KOK",
+        "km": 479,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "KNS",
+        "km": 519,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "YV",
+        "km": 558,
+        "arrival": true,
+        "connection": false
+      },
+      {
+        "station": "ILM",
+        "km": 154,
+        "arrival": false,
+        "connection": true
+      },
+      {
+        "station": "YV",
+        "km": 558,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "OU",
+        "km": 586,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "VTI",
+        "km": 612,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "RKI",
+        "km": 633,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "KML",
+        "km": 668,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "OL",
+        "km": 680,
+        "arrival": true,
+        "connection": false
+      },
+      {
+        "station": "KUO",
+        "km": 360,
+        "arrival": false,
+        "connection": true
+      },
+      {
+        "station": "KAJ",
+        "km": 192,
+        "arrival": false,
+        "connection": true
+      },
+      {
+        "station": "OL",
+        "km": 680,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "KEM",
+        "km": 786,
+        "arrival": true,
+        "connection": false
+      },
+      {
+        "station": "KEM",
+        "km": 786,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "TRV",
+        "km": 828,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "MUL",
+        "km": 876,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "ROI",
+        "km": 900,
+        "arrival": true,
+        "connection": false
+      },
+      {
+        "station": "ROI",
+        "km": 900,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "KJÄ",
+        "km": 983,
+        "arrival": true,
+        "connection": false
+      }
+    ]
+  },
+  {
+    "table_id": "7",
+    "title_fi": "Kemijärvi–Oulu–Seinäjoki–Helsinki",
+    "title_sv": "Kemijärvi–Uleåborg–Seinäjoki–Helsingfors",
+    "filter_groups": [
+      [
+        "LPA",
+        "KHA",
+        "PNÄ",
+        "KOK",
+        "KNS",
+        "YV",
+        "OU",
+        "VTI",
+        "RKI",
+        "KML",
+        "OL",
+        "KEM",
+        "TRV",
+        "MUL",
+        "ROI",
+        "KJÄ"
+      ]
+    ],
+    "include_commuter": true,
+    "rows": [
+      {
+        "station": "KJÄ",
+        "km": 0,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "ROI",
+        "km": 83,
+        "arrival": true,
+        "connection": false
+      },
+      {
+        "station": "ROI",
+        "km": 83,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "MUL",
+        "km": 107,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "TRV",
+        "km": 155,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "KEM",
+        "km": 197,
+        "arrival": true,
+        "connection": false
+      },
+      {
+        "station": "KEM",
+        "km": 197,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "OL",
+        "km": 303,
+        "arrival": true,
+        "connection": false
+      },
+      {
+        "station": "KAJ",
+        "km": 192,
+        "arrival": true,
+        "connection": true
+      },
+      {
+        "station": "KUO",
+        "km": 360,
+        "arrival": true,
+        "connection": true
+      },
+      {
+        "station": "OL",
+        "km": 303,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "KML",
+        "km": 315,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "RKI",
+        "km": 350,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "VTI",
+        "km": 371,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "OU",
+        "km": 397,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "YV",
+        "km": 425,
+        "arrival": true,
+        "connection": false
+      },
+      {
+        "station": "ILM",
+        "km": 154,
+        "arrival": true,
+        "connection": true
+      },
+      {
+        "station": "YV",
+        "km": 425,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "KNS",
+        "km": 464,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "KOK",
+        "km": 504,
+        "arrival": true,
+        "connection": false
+      },
+      {
+        "station": "KOK",
+        "km": 504,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "PNÄ",
+        "km": 537,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "KHA",
+        "km": 600,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "LPA",
+        "km": 614,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "SK",
+        "km": 637,
+        "arrival": true,
+        "connection": false
+      },
+      {
+        "station": "VS",
+        "km": 74,
+        "arrival": true,
+        "connection": true
+      },
+      {
+        "station": "JY",
+        "km": 196,
+        "arrival": true,
+        "connection": true
+      },
+      {
+        "station": "SK",
+        "km": 637,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "PKO",
+        "km": 721,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "TPE",
+        "km": 796,
+        "arrival": true,
+        "connection": false
+      },
+      {
+        "station": "PRI",
+        "km": 135,
+        "arrival": true,
+        "connection": true
+      },
+      {
+        "station": "TPE",
+        "km": 796,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "TL",
+        "km": 836,
+        "arrival": true,
+        "connection": false
+      },
+      {
+        "station": "HL",
+        "km": 875,
+        "arrival": true,
+        "connection": false
+      },
+      {
+        "station": "RI",
+        "km": 912,
+        "arrival": true,
+        "connection": false
+      },
+      {
+        "station": "RI",
+        "km": 912,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "TKL",
+        "km": 967,
+        "arrival": true,
+        "connection": false
+      },
+      {
+        "station": "KV",
+        "km": 178,
+        "arrival": true,
+        "connection": true
+      },
+      {
+        "station": "TKL",
+        "km": 967,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "PSL",
+        "km": 980,
+        "arrival": true,
+        "connection": false
+      },
+      {
+        "station": "HKI",
+        "km": 983,
+        "arrival": true,
+        "connection": false
+      }
+    ]
+  },
+  {
+    "table_id": "8",
+    "title_fi": "Turku–Tampere–Oulu–Kemijärvi",
+    "title_sv": "Åbo–Tammerfors–Uleåborg–Kemijärvi",
+    "filter_groups": [
+      [
+        "TUS",
+        "TKU",
+        "LM",
+        "HP",
+        "LPA",
+        "KHA",
+        "PNÄ",
+        "KOK",
+        "KNS",
+        "YV",
+        "OU",
+        "VTI",
+        "RKI",
+        "KML",
+        "OL",
+        "KEM",
+        "TRV",
+        "MUL",
+        "ROI",
+        "KJÄ"
+      ]
+    ],
+    "include_commuter": true,
+    "rows": [
+      {
+        "station": "TUS",
+        "km": 0,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "TKU",
+        "km": 3,
+        "arrival": true,
+        "connection": false
+      },
+      {
+        "station": "SLO",
+        "km": 56,
+        "arrival": false,
+        "connection": true
+      },
+      {
+        "station": "TKU",
+        "km": 3,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "LM",
+        "km": 69,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "HP",
+        "km": 89,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "TL",
+        "km": 131,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "TPE",
+        "km": 171,
+        "arrival": true,
+        "connection": false
+      },
+      {
+        "station": "TPE",
+        "km": 171,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "PKO",
+        "km": 246,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "SK",
+        "km": 330,
+        "arrival": true,
+        "connection": false
+      },
+      {
+        "station": "VS",
+        "km": 74,
+        "arrival": false,
+        "connection": true
+      },
+      {
+        "station": "SK",
+        "km": 330,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "LPA",
+        "km": 353,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "KHA",
+        "km": 367,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "PNÄ",
+        "km": 430,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "KOK",
+        "km": 463,
+        "arrival": true,
+        "connection": false
+      },
+      {
+        "station": "KOK",
+        "km": 463,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "KNS",
+        "km": 503,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "YV",
+        "km": 542,
+        "arrival": true,
+        "connection": false
+      },
+      {
+        "station": "ILM",
+        "km": 154,
+        "arrival": true,
+        "connection": true
+      },
+      {
+        "station": "YV",
+        "km": 542,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "OU",
+        "km": 560,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "VTI",
+        "km": 596,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "RKI",
+        "km": 617,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "KML",
+        "km": 652,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "OL",
+        "km": 664,
+        "arrival": true,
+        "connection": false
+      },
+      {
+        "station": "MI",
+        "km": 520,
+        "arrival": false,
+        "connection": true
+      },
+      {
+        "station": "KUO",
+        "km": 360,
+        "arrival": false,
+        "connection": true
+      },
+      {
+        "station": "OL",
+        "km": 664,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "KEM",
+        "km": 770,
+        "arrival": true,
+        "connection": false
+      },
+      {
+        "station": "KLI",
+        "km": 209,
+        "arrival": true,
+        "connection": true
+      },
+      {
+        "station": "KEM",
+        "km": 770,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "TRV",
+        "km": 812,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "MUL",
+        "km": 860,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "ROI",
+        "km": 884,
+        "arrival": true,
+        "connection": false
+      },
+      {
+        "station": "ROI",
+        "km": 884,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "KJÄ",
+        "km": 967,
+        "arrival": true,
+        "connection": false
+      }
+    ]
+  },
+  {
+    "table_id": "8",
+    "title_fi": "Kemijärvi–Oulu–Tampere–Turku",
+    "title_sv": "Kemijärvi–Uleåborg–Tammerfors–Åbo",
+    "filter_groups": [
+      [
+        "TUS",
+        "TKU",
+        "LM",
+        "HP",
+        "LPA",
+        "KHA",
+        "PNÄ",
+        "KOK",
+        "KNS",
+        "YV",
+        "OU",
+        "VTI",
+        "RKI",
+        "KML",
+        "OL",
+        "KEM",
+        "TRV",
+        "MUL",
+        "ROI",
+        "KJÄ"
+      ]
+    ],
+    "include_commuter": true,
+    "rows": [
+      {
+        "station": "KJÄ",
+        "km": 0,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "ROI",
+        "km": 83,
+        "arrival": true,
+        "connection": false
+      },
+      {
+        "station": "ROI",
+        "km": 83,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "MUL",
+        "km": 107,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "TRV",
+        "km": 155,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "KEM",
+        "km": 197,
+        "arrival": true,
+        "connection": false
+      },
+      {
+        "station": "KLI",
+        "km": 209,
+        "arrival": false,
+        "connection": true
+      },
+      {
+        "station": "KEM",
+        "km": 197,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "OL",
+        "km": 303,
+        "arrival": true,
+        "connection": false
+      },
+      {
+        "station": "KUO",
+        "km": 360,
+        "arrival": true,
+        "connection": true
+      },
+      {
+        "station": "MI",
+        "km": 520,
+        "arrival": true,
+        "connection": true
+      },
+      {
+        "station": "OL",
+        "km": 303,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "KML",
+        "km": 315,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "RKI",
+        "km": 350,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "VTI",
+        "km": 371,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "OU",
+        "km": 407,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "YV",
+        "km": 425,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "ILM",
+        "km": 154,
+        "arrival": false,
+        "connection": true
+      },
+      {
+        "station": "YV",
+        "km": 425,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "KNS",
+        "km": 464,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "KOK",
+        "km": 504,
+        "arrival": true,
+        "connection": false
+      },
+      {
+        "station": "KOK",
+        "km": 504,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "PNÄ",
+        "km": 537,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "KHA",
+        "km": 600,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "LPA",
+        "km": 614,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "SK",
+        "km": 637,
+        "arrival": true,
+        "connection": false
+      },
+      {
+        "station": "VS",
+        "km": 74,
+        "arrival": true,
+        "connection": true
+      },
+      {
+        "station": "SK",
+        "km": 637,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "PKO",
+        "km": 721,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "TPE",
+        "km": 796,
+        "arrival": true,
+        "connection": false
+      },
+      {
+        "station": "TPE",
+        "km": 796,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "TL",
+        "km": 836,
+        "arrival": true,
+        "connection": false
+      },
+      {
+        "station": "HP",
+        "km": 878,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "LM",
+        "km": 898,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "TKU",
+        "km": 964,
+        "arrival": true,
+        "connection": false
+      },
+      {
+        "station": "SLO",
+        "km": 56,
+        "arrival": true,
+        "connection": true
+      },
+      {
+        "station": "TKU",
+        "km": 964,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "TUS",
+        "km": 967,
+        "arrival": true,
+        "connection": false
+      }
+    ]
+  },
+  {
+    "table_id": "9",
+    "title_fi": "Turku–Tampere–Jyväskylä–Joensuu",
+    "title_sv": "Åbo–Tammerfors–Jyväskylä–Joensuu",
+    "filter_groups": [
+      [
+        "TKU",
+        "LM",
+        "HP",
+        "OV",
+        "JÄS",
+        "JY",
+        "HKS",
+        "PM",
+        "VAR",
+        "HNV",
+        "VIH",
+        "VNJ",
+        "JNS"
+      ]
+    ],
+    "include_commuter": true,
+    "rows": [
+      {
+        "station": "TUS",
+        "km": 0,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "TKU",
+        "km": 3,
+        "arrival": true,
+        "connection": false
+      },
+      {
+        "station": "SLO",
+        "km": 56,
+        "arrival": false,
+        "connection": true
+      },
+      {
+        "station": "TKU",
+        "km": 3,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "LM",
+        "km": 69,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "HP",
+        "km": 89,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "TL",
+        "km": 131,
+        "arrival": true,
+        "connection": false
+      },
+      {
+        "station": "TL",
+        "km": 131,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "TPE",
+        "km": 171,
+        "arrival": true,
+        "connection": false
+      },
+      {
+        "station": "PRI",
+        "km": 135,
+        "arrival": false,
+        "connection": true
+      },
+      {
+        "station": "TPE",
+        "km": 171,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "OV",
+        "km": 213,
+        "arrival": true,
+        "connection": false
+      },
+      {
+        "station": "OV",
+        "km": 213,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "JÄS",
+        "km": 269,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "JY",
+        "km": 326,
+        "arrival": true,
+        "connection": false
+      },
+      {
+        "station": "JY",
+        "km": 326,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "HKS",
+        "km": 367,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "PM",
+        "km": 406,
+        "arrival": true,
+        "connection": false
+      },
+      {
+        "station": "KUO",
+        "km": 89,
+        "arrival": true,
+        "connection": true
+      },
+      {
+        "station": "KAJ",
+        "km": 257,
+        "arrival": true,
+        "connection": true
+      },
+      {
+        "station": "MI",
+        "km": 71,
+        "arrival": true,
+        "connection": true
+      },
+      {
+        "station": "KV",
+        "km": 184,
+        "arrival": true,
+        "connection": true
+      },
+      {
+        "station": "HKI",
+        "km": 350,
+        "arrival": false,
+        "connection": true
+      },
+      {
+        "station": "PM",
+        "km": 406,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "VAR",
+        "km": 455,
+        "arrival": true,
+        "connection": false
+      },
+      {
+        "station": "VAR",
+        "km": 455,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "HNV",
+        "km": 498,
+        "arrival": true,
+        "connection": false
+      },
+      {
+        "station": "VIH",
+        "km": 520,
+        "arrival": true,
+        "connection": false
+      },
+      {
+        "station": "VNJ",
+        "km": 556,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "JNS",
+        "km": 589,
+        "arrival": true,
+        "connection": false
+      }
+    ]
+  },
+  {
+    "table_id": "9",
+    "title_fi": "Joensuu–Jyväskylä–Tampere–Turku",
+    "title_sv": "Joensuu–Jyväskylä–Tammerfors–Åbo",
+    "filter_groups": [
+      [
+        "TKU",
+        "LM",
+        "HP",
+        "OV",
+        "JÄS",
+        "JY",
+        "HKS",
+        "PM",
+        "VAR",
+        "HNV",
+        "VIH",
+        "VNJ",
+        "JNS"
+      ]
+    ],
+    "include_commuter": true,
+    "rows": [
+      {
+        "station": "JNS",
+        "km": 0,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "VNJ",
+        "km": 33,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "VIH",
+        "km": 69,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "HNV",
+        "km": 91,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "VAR",
+        "km": 134,
+        "arrival": true,
+        "connection": false
+      },
+      {
+        "station": "VAR",
+        "km": 134,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "PM",
+        "km": 183,
+        "arrival": true,
+        "connection": false
+      },
+      {
+        "station": "HKI",
+        "km": 350,
+        "arrival": true,
+        "connection": true
+      },
+      {
+        "station": "KV",
+        "km": 184,
+        "arrival": false,
+        "connection": true
+      },
+      {
+        "station": "MI",
+        "km": 71,
+        "arrival": false,
+        "connection": true
+      },
+      {
+        "station": "KAJ",
+        "km": 257,
+        "arrival": false,
+        "connection": true
+      },
+      {
+        "station": "KUO",
+        "km": 89,
+        "arrival": false,
+        "connection": true
+      },
+      {
+        "station": "PM",
+        "km": 183,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "HKS",
+        "km": 222,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "JY",
+        "km": 263,
+        "arrival": true,
+        "connection": false
+      },
+      {
+        "station": "JY",
+        "km": 263,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "JÄS",
+        "km": 320,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "OV",
+        "km": 376,
+        "arrival": true,
+        "connection": false
+      },
+      {
+        "station": "OV",
+        "km": 376,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "TPE",
+        "km": 418,
+        "arrival": true,
+        "connection": false
+      },
+      {
+        "station": "PRI",
+        "km": 135,
+        "arrival": true,
+        "connection": true
+      },
+      {
+        "station": "TPE",
+        "km": 418,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "TL",
+        "km": 458,
+        "arrival": true,
+        "connection": false
+      },
+      {
+        "station": "TL",
+        "km": 458,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "HP",
+        "km": 500,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "LM",
+        "km": 520,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "TKU",
+        "km": 586,
+        "arrival": true,
+        "connection": false
+      },
+      {
+        "station": "SLO",
+        "km": 56,
+        "arrival": true,
+        "connection": true
+      },
+      {
+        "station": "TKU",
+        "km": 586,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "TUS",
+        "km": 589,
+        "arrival": true,
+        "connection": false
+      }
+    ]
+  },
+  {
+    "table_id": "10",
+    "title_fi": "Helsinki–Jyväskylä–Pieksämäki–Kuopio",
+    "title_sv": "Helsingfors–Jyväskylä–Pieksämäki–Kuopio",
+    "filter_groups": [
+      [
+        "OV",
+        "JÄS",
+        "JY",
+        "HKS",
+        "PM",
+        "SNJ",
+        "KUO"
+      ]
+    ],
+    "include_commuter": true,
+    "rows": [
+      {
+        "station": "HKI",
+        "km": 0,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "PSL",
+        "km": 3,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "TKL",
+        "km": 16,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "RI",
+        "km": 71,
+        "arrival": true,
+        "connection": false
+      },
+      {
+        "station": "RI",
+        "km": 71,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "HL",
+        "km": 108,
+        "arrival": true,
+        "connection": false
+      },
+      {
+        "station": "HL",
+        "km": 108,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "TL",
+        "km": 147,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "TPE",
+        "km": 187,
+        "arrival": true,
+        "connection": false
+      },
+      {
+        "station": "PRI",
+        "km": 135,
+        "arrival": false,
+        "connection": true
+      },
+      {
+        "station": "TPE",
+        "km": 187,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "OV",
+        "km": 229,
+        "arrival": true,
+        "connection": false
+      },
+      {
+        "station": "OV",
+        "km": 229,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "JÄS",
+        "km": 285,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "JY",
+        "km": 342,
+        "arrival": true,
+        "connection": false
+      },
+      {
+        "station": "JY",
+        "km": 342,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "HKS",
+        "km": 383,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "PM",
+        "km": 422,
+        "arrival": true,
+        "connection": false
+      },
+      {
+        "station": "VAR",
+        "km": 49,
+        "arrival": true,
+        "connection": true
+      },
+      {
+        "station": "JNS",
+        "km": 183,
+        "arrival": true,
+        "connection": true
+      },
+      {
+        "station": "MI",
+        "km": 71,
+        "arrival": true,
+        "connection": true
+      },
+      {
+        "station": "KV",
+        "km": 184,
+        "arrival": true,
+        "connection": true
+      },
+      {
+        "station": "PM",
+        "km": 422,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "SNJ",
+        "km": 460,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "KUO",
+        "km": 511,
+        "arrival": true,
+        "connection": false
+      },
+      {
+        "station": "ILM",
+        "km": 85,
+        "arrival": true,
+        "connection": true
+      },
+      {
+        "station": "KAJ",
+        "km": 168,
+        "arrival": true,
+        "connection": true
+      }
+    ]
+  },
+  {
+    "table_id": "10",
+    "title_fi": "Kuopio–Pieksämäki–Jyväskylä–Helsinki",
+    "title_sv": "Kuopio–Pieksämäki–Jyväskylä–Helsingfors",
+    "filter_groups": [
+      [
+        "OV",
+        "JÄS",
+        "JY",
+        "HKS",
+        "PM",
+        "SNJ",
+        "KUO"
+      ]
+    ],
+    "include_commuter": true,
+    "rows": [
+      {
+        "station": "KAJ",
+        "km": 168,
+        "arrival": false,
+        "connection": true
+      },
+      {
+        "station": "ILM",
+        "km": 85,
+        "arrival": false,
+        "connection": true
+      },
+      {
+        "station": "KUO",
+        "km": 0,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "SNJ",
+        "km": 51,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "PM",
+        "km": 89,
+        "arrival": true,
+        "connection": false
+      },
+      {
+        "station": "KV",
+        "km": 184,
+        "arrival": false,
+        "connection": true
+      },
+      {
+        "station": "MI",
+        "km": 71,
+        "arrival": false,
+        "connection": true
+      },
+      {
+        "station": "JNS",
+        "km": 183,
+        "arrival": false,
+        "connection": true
+      },
+      {
+        "station": "VAR",
+        "km": 49,
+        "arrival": false,
+        "connection": true
+      },
+      {
+        "station": "PM",
+        "km": 89,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "HKS",
+        "km": 128,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "JY",
+        "km": 169,
+        "arrival": true,
+        "connection": false
+      },
+      {
+        "station": "JY",
+        "km": 169,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "JÄS",
+        "km": 226,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "OV",
+        "km": 282,
+        "arrival": true,
+        "connection": false
+      },
+      {
+        "station": "OV",
+        "km": 282,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "TPE",
+        "km": 324,
+        "arrival": true,
+        "connection": false
+      },
+      {
+        "station": "PRI",
+        "km": 135,
+        "arrival": true,
+        "connection": true
+      },
+      {
+        "station": "TPE",
+        "km": 324,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "TL",
+        "km": 364,
+        "arrival": true,
+        "connection": false
+      },
+      {
+        "station": "HL",
+        "km": 403,
+        "arrival": true,
+        "connection": false
+      },
+      {
+        "station": "HL",
+        "km": 403,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "RI",
+        "km": 440,
+        "arrival": true,
+        "connection": false
+      },
+      {
+        "station": "RI",
+        "km": 440,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "TKL",
+        "km": 495,
+        "arrival": true,
+        "connection": false
+      },
+      {
+        "station": "PSL",
+        "km": 508,
+        "arrival": true,
+        "connection": false
+      },
+      {
+        "station": "HKI",
+        "km": 511,
+        "arrival": true,
+        "connection": false
+      }
+    ]
+  },
+  {
+    "table_id": "11",
+    "title_fi": "Tampere–Haapamäki–Seinäjoki",
+    "title_sv": "Tammerfors–Haapamäki–Seinäjoki",
+    "filter_groups": [
+      [
+        "OV",
+        "OVK",
+        "JJ",
+        "VLP",
+        "KLO",
+        "HPK",
+        "PH",
+        "MY",
+        "EPZ",
+        "ÄHT",
+        "TUU",
+        "ALV"
+      ]
+    ],
+    "include_commuter": true,
+    "rows": [
+      {
+        "station": "TKU",
+        "km": 168,
+        "arrival": false,
+        "connection": true
+      },
+      {
+        "station": "PRI",
+        "km": 135,
+        "arrival": false,
+        "connection": true
+      },
+      {
+        "station": "TPE",
+        "km": 0,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "OV",
+        "km": 42,
+        "arrival": true,
+        "connection": false
+      },
+      {
+        "station": "JY",
+        "km": 113,
+        "arrival": false,
+        "connection": true
+      },
+      {
+        "station": "OV",
+        "km": 42,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "OVK",
+        "km": 45,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "JJ",
+        "km": 59,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "VLP",
+        "km": 89,
+        "arrival": true,
+        "connection": false
+      },
+      {
+        "station": "KLO",
+        "km": 100,
+        "arrival": true,
+        "connection": false
+      },
+      {
+        "station": "HPK",
+        "km": 114,
+        "arrival": true,
+        "connection": false
+      },
+      {
+        "station": "KEU",
+        "km": 16,
+        "arrival": true,
+        "connection": true
+      },
+      {
+        "station": "JY",
+        "km": 78,
+        "arrival": true,
+        "connection": true
+      },
+      {
+        "station": "HPK",
+        "km": 114,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "PH",
+        "km": 126,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "MY",
+        "km": 147,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "EPZ",
+        "km": 153,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "ÄHT",
+        "km": 159,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "TUU",
+        "km": 180,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "ALV",
+        "km": 187,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "SK",
+        "km": 232,
+        "arrival": true,
+        "connection": false
+      },
+      {
+        "station": "VS",
+        "km": 74,
+        "arrival": true,
+        "connection": true
+      },
+      {
+        "station": "KOK",
+        "km": 133,
+        "arrival": true,
+        "connection": true
+      },
+      {
+        "station": "OL",
+        "km": 334,
+        "arrival": true,
+        "connection": true
+      },
+      {
+        "station": "ROI",
+        "km": 554,
+        "arrival": true,
+        "connection": true
+      }
+    ]
+  },
+  {
+    "table_id": "11",
+    "title_fi": "Seinäjoki–Haapamäki–Helsinki",
+    "title_sv": "Seinäjoki–Haapamäki–Helsingfors",
+    "filter_groups": [
+      [
+        "OV",
+        "OVK",
+        "JJ",
+        "VLP",
+        "KLO",
+        "HPK",
+        "PH",
+        "MY",
+        "EPZ",
+        "ÄHT",
+        "TUU",
+        "ALV"
+      ]
+    ],
+    "include_commuter": true,
+    "rows": [
+      {
+        "station": "ROI",
+        "km": 554,
+        "arrival": false,
+        "connection": true
+      },
+      {
+        "station": "OL",
+        "km": 334,
+        "arrival": false,
+        "connection": true
+      },
+      {
+        "station": "KOK",
+        "km": 133,
+        "arrival": false,
+        "connection": true
+      },
+      {
+        "station": "VS",
+        "km": 74,
+        "arrival": false,
+        "connection": true
+      },
+      {
+        "station": "SK",
+        "km": 0,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "ALV",
+        "km": 45,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "TUU",
+        "km": 52,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "ÄHT",
+        "km": 73,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "EPZ",
+        "km": 79,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "MY",
+        "km": 85,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "PH",
+        "km": 106,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "HPK",
+        "km": 118,
+        "arrival": true,
+        "connection": false
+      },
+      {
+        "station": "JY",
+        "km": 78,
+        "arrival": false,
+        "connection": true
+      },
+      {
+        "station": "KEU",
+        "km": 16,
+        "arrival": false,
+        "connection": true
+      },
+      {
+        "station": "HPK",
+        "km": 118,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "KLO",
+        "km": 132,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "VLP",
+        "km": 143,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "JJ",
+        "km": 173,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "OVK",
+        "km": 187,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "OV",
+        "km": 190,
+        "arrival": true,
+        "connection": false
+      },
+      {
+        "station": "JY",
+        "km": 113,
+        "arrival": true,
+        "connection": true
+      },
+      {
+        "station": "OV",
+        "km": 190,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "TPE",
+        "km": 232,
+        "arrival": true,
+        "connection": false
+      },
+      {
+        "station": "PRI",
+        "km": 135,
+        "arrival": true,
+        "connection": true
+      },
+      {
+        "station": "TKU",
+        "km": 168,
+        "arrival": true,
+        "connection": true
+      }
+    ]
+  },
+  {
+    "table_id": "12",
+    "title_fi": "Helsinki–Kouvola–Kotkan satama",
+    "title_sv": "Helsingfors–Kouvola–Kotka hamn",
+    "filter_groups": [
+      [
+        "HAA",
+        "MLÄ",
+        "HNN",
+        "LH",
+        "NSL",
+        "KA",
+        "KRA",
+        "KV",
+        "MKI",
+        "IKR",
+        "TSL",
+        "KY",
+        "KLN",
+        "PTI",
+        "KTA",
+        "KTS"
+      ]
+    ],
+    "include_commuter": true,
+    "rows": [
+      {
+        "station": "HKI",
+        "km": 0,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "PSL",
+        "km": 3,
+        "arrival": true,
+        "connection": false
+      },
+      {
+        "station": "TKU",
+        "km": 191,
+        "arrival": false,
+        "connection": true
+      },
+      {
+        "station": "PSL",
+        "km": 3,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "TKL",
+        "km": 16,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "KE",
+        "km": 29,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "HAA",
+        "km": 40,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "MLÄ",
+        "km": 59,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "HNN",
+        "km": 79,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "LH",
+        "km": 104,
+        "arrival": true,
+        "connection": false
+      },
+      {
+        "station": "LH",
+        "km": 104,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "NSL",
+        "km": 120,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "KA",
+        "km": 143,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "KRA",
+        "km": 159,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "KV",
+        "km": 166,
+        "arrival": true,
+        "connection": false
+      },
+      {
+        "station": "KV",
+        "km": 166,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "MKI",
+        "km": 178,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "IKR",
+        "km": 187,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "TSL",
+        "km": 203,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "KY",
+        "km": 207,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "KLN",
+        "km": 211,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "PTI",
+        "km": 215,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "KTA",
+        "km": 217,
+        "arrival": true,
+        "connection": false
+      },
+      {
+        "station": "KTS",
+        "km": 218,
+        "arrival": true,
+        "connection": false
+      }
+    ]
+  },
+  {
+    "table_id": "12",
+    "title_fi": "Kotkan satama–Kouvola–Helsinki",
+    "title_sv": "Kotka hamn–Kouvola–Helsingfors",
+    "filter_groups": [
+      [
+        "HAA",
+        "MLÄ",
+        "HNN",
+        "LH",
+        "NSL",
+        "KA",
+        "KRA",
+        "KV",
+        "MKI",
+        "IKR",
+        "TSL",
+        "KY",
+        "KLN",
+        "PTI",
+        "KTA",
+        "KTS"
+      ]
+    ],
+    "include_commuter": true,
+    "rows": [
+      {
+        "station": "KTS",
+        "km": 0,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "KTA",
+        "km": 1,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "PTI",
+        "km": 3,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "KLN",
+        "km": 7,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "KY",
+        "km": 11,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "TSL",
+        "km": 15,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "IKR",
+        "km": 31,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "MKI",
+        "km": 40,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "KV",
+        "km": 52,
+        "arrival": true,
+        "connection": false
+      },
+      {
+        "station": "KV",
+        "km": 52,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "KRA",
+        "km": 59,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "KA",
+        "km": 75,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "NSL",
+        "km": 98,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "LH",
+        "km": 114,
+        "arrival": true,
+        "connection": false
+      },
+      {
+        "station": "LH",
+        "km": 114,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "HNN",
+        "km": 139,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "MLÄ",
+        "km": 159,
+        "arrival": true,
+        "connection": false
+      },
+      {
+        "station": "HAA",
+        "km": 178,
+        "arrival": true,
+        "connection": false
+      },
+      {
+        "station": "KE",
+        "km": 189,
+        "arrival": true,
+        "connection": false
+      },
+      {
+        "station": "TKL",
+        "km": 202,
+        "arrival": true,
+        "connection": false
+      },
+      {
+        "station": "PSL",
+        "km": 215,
+        "arrival": true,
+        "connection": false
+      },
+      {
+        "station": "TKU",
+        "km": 191,
+        "arrival": true,
+        "connection": true
+      },
+      {
+        "station": "PSL",
+        "km": 215,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "HKI",
+        "km": 218,
+        "arrival": true,
+        "connection": false
+      }
+    ]
+  },
+  {
+    "table_id": "12A",
+    "title_fi": "Riihimäki–Lahti",
+    "title_sv": "Riihimäki–Lahtis",
+    "filter_groups": [
+      [
+        "RI",
+        "HK",
+        "OI",
+        "MLA",
+        "LAA",
+        "JR",
+        "HR",
+        "LH"
+      ]
+    ],
+    "include_commuter": true,
+    "rows": [
+      {
+        "station": "RI",
+        "km": 0,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "HK",
+        "km": 9,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "OI",
+        "km": 15,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "MLA",
+        "km": 21,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "LAA",
+        "km": 27,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "JR",
+        "km": 33,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "HR",
+        "km": 45,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "LH",
+        "km": 59,
+        "arrival": true,
+        "connection": false
+      }
+    ]
+  },
+  {
+    "table_id": "12A",
+    "title_fi": "Lahti–Riihimäki",
+    "title_sv": "Lahtis–Riihimäki",
+    "filter_groups": [
+      [
+        "RI",
+        "HK",
+        "OI",
+        "MLA",
+        "LAA",
+        "JR",
+        "HR",
+        "LH"
+      ]
+    ],
+    "include_commuter": true,
+    "rows": [
+      {
+        "station": "LH",
+        "km": 0,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "HR",
+        "km": 14,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "JR",
+        "km": 26,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "LAA",
+        "km": 32,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "MLA",
+        "km": 38,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "OI",
+        "km": 44,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "HK",
+        "km": 50,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "RI",
+        "km": 59,
+        "arrival": true,
+        "connection": false
+      }
+    ]
+  },
+  {
+    "table_id": "13",
+    "title_fi": "Helsinki–Kuopio–Oulu",
+    "title_sv": "Helsingfors–Kuopio–Uleåborg",
+    "filter_groups": [
+      [
+        "HAA",
+        "MLÄ",
+        "HNN",
+        "LH"
+      ],
+      [
+        "MR",
+        "MI",
+        "SNJ",
+        "KUO",
+        "SIJ",
+        "LNA",
+        "ILM",
+        "SKV",
+        "KAJ",
+        "KON",
+        "PTO",
+        "VAA",
+        "UTJ",
+        "MH"
+      ]
+    ],
+    "include_commuter": true,
+    "rows": [
+      {
+        "station": "HKI",
+        "km": 0,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "PSL",
+        "km": 3,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "TKL",
+        "km": 16,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "KE",
+        "km": 29,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "HAA",
+        "km": 40,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "MLÄ",
+        "km": 59,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "HNN",
+        "km": 79,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "LH",
+        "km": 104,
+        "arrival": true,
+        "connection": false
+      },
+      {
+        "station": "LH",
+        "km": 104,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "KV",
+        "km": 166,
+        "arrival": true,
+        "connection": false
+      },
+      {
+        "station": "IMR",
+        "km": 122,
+        "arrival": false,
+        "connection": true
+      },
+      {
+        "station": "LR",
+        "km": 86,
+        "arrival": false,
+        "connection": true
+      },
+      {
+        "station": "KTS",
+        "km": 52,
+        "arrival": false,
+        "connection": true
+      },
+      {
+        "station": "KV",
+        "km": 166,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "HLS",
+        "km": 209,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "MR",
+        "km": 237,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "MI",
+        "km": 279,
+        "arrival": true,
+        "connection": false
+      },
+      {
+        "station": "MI",
+        "km": 279,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "PM",
+        "km": 350,
+        "arrival": true,
+        "connection": false
+      },
+      {
+        "station": "VAR",
+        "km": 49,
+        "arrival": true,
+        "connection": true
+      },
+      {
+        "station": "JNS",
+        "km": 183,
+        "arrival": true,
+        "connection": true
+      },
+      {
+        "station": "TKU",
+        "km": 403,
+        "arrival": false,
+        "connection": true
+      },
+      {
+        "station": "TPE",
+        "km": 235,
+        "arrival": false,
+        "connection": true
+      },
+      {
+        "station": "JY",
+        "km": 80,
+        "arrival": false,
+        "connection": true
+      },
+      {
+        "station": "PM",
+        "km": 350,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "SNJ",
+        "km": 388,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "KUO",
+        "km": 439,
+        "arrival": true,
+        "connection": false
+      },
+      {
+        "station": "KUO",
+        "km": 439,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "SIJ",
+        "km": 464,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "LNA",
+        "km": 500,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "ILM",
+        "km": 524,
+        "arrival": true,
+        "connection": false
+      },
+      {
+        "station": "YV",
+        "km": 154,
+        "arrival": true,
+        "connection": true
+      },
+      {
+        "station": "ILM",
+        "km": 524,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "SKV",
+        "km": 563,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "KAJ",
+        "km": 607,
+        "arrival": true,
+        "connection": false
+      },
+      {
+        "station": "KAJ",
+        "km": 607,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "KON",
+        "km": 633,
+        "arrival": true,
+        "connection": false
+      },
+      {
+        "station": "KON",
+        "km": 633,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "PTO",
+        "km": 650,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "VAA",
+        "km": 707,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "UTJ",
+        "km": 741,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "MH",
+        "km": 763,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "OL",
+        "km": 799,
+        "arrival": true,
+        "connection": false
+      },
+      {
+        "station": "KEM",
+        "km": 106,
+        "arrival": true,
+        "connection": true
+      },
+      {
+        "station": "ROI",
+        "km": 220,
+        "arrival": true,
+        "connection": true
+      }
+    ]
+  },
+  {
+    "table_id": "13",
+    "title_fi": "Oulu–Kuopio–Helsinki",
+    "title_sv": "Uleåborg–Kuopio–Helsingfors",
+    "filter_groups": [
+      [
+        "HAA",
+        "MLÄ",
+        "HNN",
+        "LH"
+      ],
+      [
+        "MR",
+        "MI",
+        "SNJ",
+        "KUO",
+        "SIJ",
+        "LNA",
+        "ILM",
+        "SKV",
+        "KAJ",
+        "KON",
+        "PTO",
+        "VAA",
+        "UTJ",
+        "MH"
+      ]
+    ],
+    "include_commuter": true,
+    "rows": [
+      {
+        "station": "ROI",
+        "km": 220,
+        "arrival": false,
+        "connection": true
+      },
+      {
+        "station": "KEM",
+        "km": 106,
+        "arrival": false,
+        "connection": true
+      },
+      {
+        "station": "OL",
+        "km": 0,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "MH",
+        "km": 36,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "UTJ",
+        "km": 58,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "VAA",
+        "km": 92,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "PTO",
+        "km": 149,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "KON",
+        "km": 166,
+        "arrival": true,
+        "connection": false
+      },
+      {
+        "station": "KON",
+        "km": 166,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "KAJ",
+        "km": 192,
+        "arrival": true,
+        "connection": false
+      },
+      {
+        "station": "KAJ",
+        "km": 192,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "SKV",
+        "km": 236,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "ILM",
+        "km": 275,
+        "arrival": true,
+        "connection": false
+      },
+      {
+        "station": "YV",
+        "km": 154,
+        "arrival": false,
+        "connection": true
+      },
+      {
+        "station": "ILM",
+        "km": 275,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "LNA",
+        "km": 299,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "SIJ",
+        "km": 335,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "KUO",
+        "km": 360,
+        "arrival": true,
+        "connection": false
+      },
+      {
+        "station": "KUO",
+        "km": 360,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "SNJ",
+        "km": 411,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "PM",
+        "km": 449,
+        "arrival": true,
+        "connection": false
+      },
+      {
+        "station": "JY",
+        "km": 80,
+        "arrival": true,
+        "connection": true
+      },
+      {
+        "station": "TPE",
+        "km": 235,
+        "arrival": true,
+        "connection": true
+      },
+      {
+        "station": "TKU",
+        "km": 403,
+        "arrival": true,
+        "connection": true
+      },
+      {
+        "station": "JNS",
+        "km": 183,
+        "arrival": false,
+        "connection": true
+      },
+      {
+        "station": "VAR",
+        "km": 49,
+        "arrival": false,
+        "connection": true
+      },
+      {
+        "station": "PM",
+        "km": 449,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "MI",
+        "km": 520,
+        "arrival": true,
+        "connection": false
+      },
+      {
+        "station": "MI",
+        "km": 520,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "MR",
+        "km": 562,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "HLS",
+        "km": 590,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "KV",
+        "km": 633,
+        "arrival": true,
+        "connection": false
+      },
+      {
+        "station": "KTS",
+        "km": 52,
+        "arrival": true,
+        "connection": true
+      },
+      {
+        "station": "LR",
+        "km": 86,
+        "arrival": true,
+        "connection": true
+      },
+      {
+        "station": "IMR",
+        "km": 122,
+        "arrival": true,
+        "connection": true
+      },
+      {
+        "station": "KV",
+        "km": 633,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "LH",
+        "km": 695,
+        "arrival": true,
+        "connection": false
+      },
+      {
+        "station": "LH",
+        "km": 695,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "HNN",
+        "km": 720,
+        "arrival": true,
+        "connection": false
+      },
+      {
+        "station": "MLÄ",
+        "km": 740,
+        "arrival": true,
+        "connection": false
+      },
+      {
+        "station": "HAA",
+        "km": 759,
+        "arrival": true,
+        "connection": false
+      },
+      {
+        "station": "KE",
+        "km": 770,
+        "arrival": true,
+        "connection": false
+      },
+      {
+        "station": "TKL",
+        "km": 783,
+        "arrival": true,
+        "connection": false
+      },
+      {
+        "station": "PSL",
+        "km": 796,
+        "arrival": true,
+        "connection": false
+      },
+      {
+        "station": "HKI",
+        "km": 799,
+        "arrival": true,
+        "connection": false
+      }
+    ]
+  },
+  {
+    "table_id": "14",
+    "title_fi": "Helsinki–Imatra–Joensuu–Nurmes",
+    "title_sv": "Helsingfors–Imatra–Joensuu–Nurmes",
+    "filter_groups": [
+      [
+        "HAA",
+        "MLÄ",
+        "HNN",
+        "LH"
+      ],
+      [
+        "LR",
+        "JTS",
+        "IMR",
+        "SPL",
+        "PAR",
+        "KTI",
+        "KIT",
+        "JNS",
+        "LIS",
+        "KOH",
+        "HÖL",
+        "KYN",
+        "NRM"
+      ]
+    ],
+    "include_commuter": true,
+    "rows": [
+      {
+        "station": "HKI",
+        "km": 0,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "PSL",
+        "km": 3,
+        "arrival": true,
+        "connection": false
+      },
+      {
+        "station": "TKU",
+        "km": 191,
+        "arrival": false,
+        "connection": true
+      },
+      {
+        "station": "PSL",
+        "km": 3,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "TKL",
+        "km": 16,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "KE",
+        "km": 29,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "HAA",
+        "km": 40,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "MLÄ",
+        "km": 59,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "HNN",
+        "km": 79,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "LH",
+        "km": 104,
+        "arrival": true,
+        "connection": false
+      },
+      {
+        "station": "LH",
+        "km": 104,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "KV",
+        "km": 166,
+        "arrival": true,
+        "connection": false
+      },
+      {
+        "station": "MI",
+        "km": 113,
+        "arrival": false,
+        "connection": true
+      },
+      {
+        "station": "KTS",
+        "km": 52,
+        "arrival": false,
+        "connection": true
+      },
+      {
+        "station": "KV",
+        "km": 166,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "LR",
+        "km": 252,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "JTS",
+        "km": 270,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "IMR",
+        "km": 288,
+        "arrival": true,
+        "connection": false
+      },
+      {
+        "station": "IMR",
+        "km": 288,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "SPL",
+        "km": 333,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "PAR",
+        "km": 352,
+        "arrival": true,
+        "connection": false
+      },
+      {
+        "station": "SL",
+        "km": 59,
+        "arrival": true,
+        "connection": true
+      },
+      {
+        "station": "PAR",
+        "km": 352,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "KTI",
+        "km": 393,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "KIT",
+        "km": 425,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "JNS",
+        "km": 482,
+        "arrival": true,
+        "connection": false
+      },
+      {
+        "station": "JNS",
+        "km": 482,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "LIS",
+        "km": 586,
+        "arrival": true,
+        "connection": false
+      },
+      {
+        "station": "KYN",
+        "km": 601,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "HÖL",
+        "km": 623,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "KOH",
+        "km": 634,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "NRM",
+        "km": 642,
+        "arrival": true,
+        "connection": false
+      }
+    ]
+  },
+  {
+    "table_id": "14",
+    "title_fi": "Nurmes–Joensuu–Imatra–Helsinki",
+    "title_sv": "Nurmes–Joensuu–Imatra–Helsingfors",
+    "filter_groups": [
+      [
+        "HAA",
+        "MLÄ",
+        "HNN",
+        "LH"
+      ],
+      [
+        "LR",
+        "JTS",
+        "IMR",
+        "SPL",
+        "PAR",
+        "KTI",
+        "KIT",
+        "JNS",
+        "LIS",
+        "KOH",
+        "HÖL",
+        "KYN",
+        "NRM"
+      ]
+    ],
+    "include_commuter": true,
+    "rows": [
+      {
+        "station": "NRM",
+        "km": 0,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "KOH",
+        "km": 9,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "HÖL",
+        "km": 19,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "KYN",
+        "km": 42,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "LIS",
+        "km": 56,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "JNS",
+        "km": 160,
+        "arrival": true,
+        "connection": false
+      },
+      {
+        "station": "JNS",
+        "km": 160,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "KIT",
+        "km": 217,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "KTI",
+        "km": 249,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "PAR",
+        "km": 290,
+        "arrival": true,
+        "connection": false
+      },
+      {
+        "station": "SL",
+        "km": 59,
+        "arrival": false,
+        "connection": true
+      },
+      {
+        "station": "PAR",
+        "km": 290,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "SPL",
+        "km": 309,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "IMR",
+        "km": 354,
+        "arrival": true,
+        "connection": false
+      },
+      {
+        "station": "IMR",
+        "km": 354,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "JTS",
+        "km": 372,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "LR",
+        "km": 390,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "KV",
+        "km": 476,
+        "arrival": true,
+        "connection": false
+      },
+      {
+        "station": "KTS",
+        "km": 52,
+        "arrival": false,
+        "connection": true
+      },
+      {
+        "station": "MI",
+        "km": 113,
+        "arrival": false,
+        "connection": true
+      },
+      {
+        "station": "KV",
+        "km": 476,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "LH",
+        "km": 538,
+        "arrival": true,
+        "connection": false
+      },
+      {
+        "station": "LH",
+        "km": 538,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "HNN",
+        "km": 563,
+        "arrival": true,
+        "connection": false
+      },
+      {
+        "station": "MLÄ",
+        "km": 583,
+        "arrival": true,
+        "connection": false
+      },
+      {
+        "station": "HAA",
+        "km": 602,
+        "arrival": true,
+        "connection": false
+      },
+      {
+        "station": "KE",
+        "km": 613,
+        "arrival": true,
+        "connection": false
+      },
+      {
+        "station": "TKL",
+        "km": 626,
+        "arrival": true,
+        "connection": false
+      },
+      {
+        "station": "PSL",
+        "km": 639,
+        "arrival": true,
+        "connection": false
+      },
+      {
+        "station": "TKU",
+        "km": 191,
+        "arrival": true,
+        "connection": true
+      },
+      {
+        "station": "PSL",
+        "km": 639,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "HKI",
+        "km": 642,
+        "arrival": true,
+        "connection": false
+      }
+    ]
+  },
+  {
+    "table_id": "17",
+    "title_fi": "Vaasa–Jyväskylä–Joensuu",
+    "title_sv": "Vasa–Jyväskylä–Joensuu",
+    "filter_groups": [
+      [
+        "SK",
+        "TK",
+        "VS"
+      ],
+      [
+        "ALV",
+        "TUU",
+        "ÄHT",
+        "MY",
+        "PH",
+        "HPK",
+        "KEU",
+        "PVI",
+        "JY"
+      ],
+      [
+        "JY",
+        "HKS",
+        "PM",
+        "VAR",
+        "HNV",
+        "VIH",
+        "VNJ",
+        "JNS"
+      ]
+    ],
+    "include_commuter": true,
+    "rows": [
+      {
+        "station": "VS",
+        "km": 0,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "TK",
+        "km": 32,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "SK",
+        "km": 74,
+        "arrival": true,
+        "connection": false
+      },
+      {
+        "station": "SK",
+        "km": 74,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "ALV",
+        "km": 119,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "TUU",
+        "km": 126,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "ÄHT",
+        "km": 147,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "EPZ",
+        "km": 153,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "MY",
+        "km": 159,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "PH",
+        "km": 180,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "HPK",
+        "km": 192,
+        "arrival": true,
+        "connection": false
+      },
+      {
+        "station": "HPK",
+        "km": 192,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "KEU",
+        "km": 208,
+        "arrival": true,
+        "connection": false
+      },
+      {
+        "station": "KEU",
+        "km": 208,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "PVI",
+        "km": 235,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "JY",
+        "km": 270,
+        "arrival": true,
+        "connection": false
+      },
+      {
+        "station": "JY",
+        "km": 270,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "HKS",
+        "km": 311,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "PM",
+        "km": 350,
+        "arrival": true,
+        "connection": false
+      },
+      {
+        "station": "PM",
+        "km": 350,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "VAR",
+        "km": 399,
+        "arrival": true,
+        "connection": false
+      },
+      {
+        "station": "VAR",
+        "km": 399,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "HNV",
+        "km": 442,
+        "arrival": true,
+        "connection": false
+      },
+      {
+        "station": "VIH",
+        "km": 464,
+        "arrival": true,
+        "connection": false
+      },
+      {
+        "station": "VNJ",
+        "km": 500,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "JNS",
+        "km": 533,
+        "arrival": true,
+        "connection": false
+      }
+    ]
+  },
+  {
+    "table_id": "17",
+    "title_fi": "Joensuu–Jyväskylä–Vaasa",
+    "title_sv": "Joensuu–Jyväskylä–Vasa",
+    "filter_groups": [
+      [
+        "SK",
+        "TK",
+        "VS"
+      ],
+      [
+        "ALV",
+        "TUU",
+        "ÄHT",
+        "MY",
+        "PH",
+        "HPK",
+        "KEU",
+        "PVI",
+        "JY"
+      ],
+      [
+        "JY",
+        "HKS",
+        "PM",
+        "VAR",
+        "HNV",
+        "VIH",
+        "VNJ",
+        "JNS"
+      ]
+    ],
+    "include_commuter": true,
+    "rows": [
+      {
+        "station": "JNS",
+        "km": 0,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "VNJ",
+        "km": 33,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "VIH",
+        "km": 69,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "HNV",
+        "km": 91,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "VAR",
+        "km": 134,
+        "arrival": true,
+        "connection": false
+      },
+      {
+        "station": "VAR",
+        "km": 134,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "PM",
+        "km": 183,
+        "arrival": true,
+        "connection": false
+      },
+      {
+        "station": "PM",
+        "km": 183,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "HKS",
+        "km": 222,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "JY",
+        "km": 263,
+        "arrival": true,
+        "connection": false
+      },
+      {
+        "station": "JY",
+        "km": 263,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "PVI",
+        "km": 298,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "KEU",
+        "km": 325,
+        "arrival": true,
+        "connection": false
+      },
+      {
+        "station": "KEU",
+        "km": 325,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "HPK",
+        "km": 341,
+        "arrival": true,
+        "connection": false
+      },
+      {
+        "station": "HPK",
+        "km": 341,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "PH",
+        "km": 353,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "MY",
+        "km": 374,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "EPZ",
+        "km": 380,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "ÄHT",
+        "km": 386,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "TUU",
+        "km": 407,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "ALV",
+        "km": 414,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "SK",
+        "km": 459,
+        "arrival": true,
+        "connection": false
+      },
+      {
+        "station": "SK",
+        "km": 459,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "TK",
+        "km": 501,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "VS",
+        "km": 533,
+        "arrival": true,
+        "connection": false
+      }
+    ]
+  },
+  {
+    "table_id": "18",
+    "title_fi": "Iisalmi–Ylivieska",
+    "title_sv": "Idensalmi–Ylivieska",
+    "filter_groups": [
+      [
+        "ILM",
+        "RNN",
+        "KRV",
+        "PHÄ",
+        "HPJ",
+        "NVL",
+        "YV"
+      ]
+    ],
+    "include_commuter": true,
+    "rows": [
+      {
+        "station": "KAJ",
+        "km": 83,
+        "arrival": false,
+        "connection": true
+      },
+      {
+        "station": "ILM",
+        "km": 0,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "RNN",
+        "km": 18,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "KRV",
+        "km": 34,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "PHÄ",
+        "km": 66,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "HPJ",
+        "km": 99,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "NVL",
+        "km": 127,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "YV",
+        "km": 154,
+        "arrival": true,
+        "connection": false
+      },
+      {
+        "station": "OL",
+        "km": 122,
+        "arrival": true,
+        "connection": true
+      },
+      {
+        "station": "ROI",
+        "km": 342,
+        "arrival": true,
+        "connection": true
+      },
+      {
+        "station": "SK",
+        "km": 212,
+        "arrival": true,
+        "connection": true
+      },
+      {
+        "station": "TPE",
+        "km": 371,
+        "arrival": true,
+        "connection": true
+      },
+      {
+        "station": "HKI",
+        "km": 558,
+        "arrival": true,
+        "connection": true
+      }
+    ]
+  },
+  {
+    "table_id": "18",
+    "title_fi": "Ylivieska–Iisalmi",
+    "title_sv": "Ylivieska–Idensalmi",
+    "filter_groups": [
+      [
+        "ILM",
+        "RNN",
+        "KRV",
+        "PHÄ",
+        "HPJ",
+        "NVL",
+        "YV"
+      ]
+    ],
+    "include_commuter": true,
+    "rows": [
+      {
+        "station": "HKI",
+        "km": 558,
+        "arrival": false,
+        "connection": true
+      },
+      {
+        "station": "TPE",
+        "km": 371,
+        "arrival": false,
+        "connection": true
+      },
+      {
+        "station": "SK",
+        "km": 212,
+        "arrival": false,
+        "connection": true
+      },
+      {
+        "station": "KOK",
+        "km": 79,
+        "arrival": false,
+        "connection": true
+      },
+      {
+        "station": "ROI",
+        "km": 342,
+        "arrival": false,
+        "connection": true
+      },
+      {
+        "station": "OL",
+        "km": 122,
+        "arrival": false,
+        "connection": true
+      },
+      {
+        "station": "YV",
+        "km": 0,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "NVL",
+        "km": 27,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "HPJ",
+        "km": 55,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "PHÄ",
+        "km": 88,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "KRV",
+        "km": 120,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "RNN",
+        "km": 136,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "ILM",
+        "km": 154,
+        "arrival": true,
+        "connection": false
+      },
+      {
+        "station": "KAJ",
+        "km": 83,
+        "arrival": true,
+        "connection": true
+      },
+      {
+        "station": "KUO",
+        "km": 85,
+        "arrival": true,
+        "connection": true
+      },
+      {
+        "station": "KV",
+        "km": 358,
+        "arrival": true,
+        "connection": true
+      },
+      {
+        "station": "HKI",
+        "km": 550,
+        "arrival": true,
+        "connection": true
+      }
+    ]
+  },
+  {
+    "table_id": "19",
+    "title_fi": "Parikkala–Savonlinna",
+    "title_sv": "Parikkala–Nyslott",
+    "filter_groups": [
+      [
+        "PAR",
+        "PUN",
+        "LUS",
+        "REE",
+        "KIÄ",
+        "SL"
+      ]
+    ],
+    "include_commuter": true,
+    "rows": [
+      {
+        "station": "PAR",
+        "km": 0,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "PUN",
+        "km": 26,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "LUS",
+        "km": 32,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "REE",
+        "km": 33,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "KIÄ",
+        "km": 45,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "SL",
+        "km": 59,
+        "arrival": true,
+        "connection": false
+      }
+    ]
+  },
+  {
+    "table_id": "19",
+    "title_fi": "Savonlinna–Parikkala",
+    "title_sv": "Nyslott–Parikkala",
+    "filter_groups": [
+      [
+        "PAR",
+        "PUN",
+        "LUS",
+        "REE",
+        "KIÄ",
+        "SL"
+      ]
+    ],
+    "include_commuter": true,
+    "rows": [
+      {
+        "station": "SL",
+        "km": 0,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "KIÄ",
+        "km": 14,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "REE",
+        "km": 26,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "LUS",
+        "km": 27,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "PUN",
+        "km": 33,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "PAR",
+        "km": 59,
+        "arrival": true,
+        "connection": false
+      }
+    ]
+  },
+  {
+    "table_id": "30",
+    "title_fi": "Oulu–Kemi–Tornio–Haaparanta",
+    "title_sv": "Uleåborg–Kemi–Torneå–Haparanda",
+    "filter_groups": [
+      [
+        "KEM",
+        "TRI",
+        "TOR",
+        "HPA"
+      ]
+    ],
+    "include_commuter": true,
+    "rows": [
+      {
+        "station": "KUO",
+        "km": 360,
+        "arrival": false,
+        "connection": true
+      },
+      {
+        "station": "HKI",
+        "km": 680,
+        "arrival": false,
+        "connection": true
+      },
+      {
+        "station": "KOK",
+        "km": 201,
+        "arrival": false,
+        "connection": true
+      },
+      {
+        "station": "OL",
+        "km": 0,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "KEM",
+        "km": 106,
+        "arrival": true,
+        "connection": false
+      },
+      {
+        "station": "KEM",
+        "km": 106,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "TRI",
+        "km": 130,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "TOR",
+        "km": 132,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "HPA",
+        "km": 135,
+        "arrival": true,
+        "connection": false
+      }
+    ]
+  },
+  {
+    "table_id": "30",
+    "title_fi": "Haaparanta–Tornio–Kemi–Oulu",
+    "title_sv": "Haparanda–Torneå–Kemi–Uleåborg",
+    "filter_groups": [
+      [
+        "KEM",
+        "TRI",
+        "TOR",
+        "HPA"
+      ]
+    ],
+    "include_commuter": true,
+    "rows": [
+      {
+        "station": "HPA",
+        "km": 0,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "TOR",
+        "km": 3,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "TRI",
+        "km": 5,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "KEM",
+        "km": 29,
+        "arrival": true,
+        "connection": false
+      },
+      {
+        "station": "KEM",
+        "km": 29,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "OL",
+        "km": 135,
+        "arrival": true,
+        "connection": false
+      },
+      {
+        "station": "KOK",
+        "km": 201,
+        "arrival": true,
+        "connection": true
+      },
+      {
+        "station": "HKI",
+        "km": 680,
+        "arrival": true,
+        "connection": true
+      },
+      {
+        "station": "KUO",
+        "km": 360,
+        "arrival": true,
+        "connection": true
+      }
+    ]
+  }
+]

@@ -1,0 +1,11 @@
+# PDF generation
+reportlab>=4.0.0
+# Optional: vector SVG train-type symbols in logos/
+svglib>=1.5
+
+# Tests only (PDF text extraction in end-to-end tests)
+pytest>=7.0
+pypdf>=4.0.0
+
+# Only for tools/booklet_to_routes.py (rebuilding routes.json from the 2007 booklet PDF)
+pdfplumber>=0.10
