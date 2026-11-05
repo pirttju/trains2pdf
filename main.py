@@ -2,8 +2,9 @@
 main.py - Pipeline coordinator for Finnish and Swedish timetable books.
 
 Usage:
-    python main.py [--gtfs gtfs-passenger-stops.zip] [--start 2026-10-16] [--end 2026-12-12]
-                   [--lang fi sv] [--outdir .]
+    python main.py [--gtfs gtfs-passenger-stops.zip] [--routes routes.json]
+                   [--start 2026-10-16] [--end 2026-12-12]
+                   [--lang fi sv] [--output taskuaikataulu_{LANG}.pdf] [--outdir .]
 Without --start/--end the book covers the feed start up to the next timetable change.
 """
 import argparse
@@ -67,7 +68,8 @@ def compile_book(gtfs_path: str = "gtfs-passenger-stops.zip", lang: str = "fi",
                  output_pdf: Optional[str] = None, importer: Optional[GTFSImporter] = None,
                  all_trips: Optional[List[TrainTrip]] = None,
                  start: Optional[date] = None, end: Optional[date] = None,
-                 routes: Optional[List[RouteDefinition]] = None, drop_empty: bool = True,
+                 routes: Optional[List[RouteDefinition]] = None,
+                 routes_path: Optional[str] = None, drop_empty: bool = True,
                  map_path: Optional[str] = None, notes_pages: int = 0) -> Dict:
     """Builds one book. Pass `importer` + `all_trips` to reuse an already loaded feed.
     Returns a summary dict (page numbers per table etc.) for logging and tests."""
@@ -84,7 +86,9 @@ def compile_book(gtfs_path: str = "gtfs-passenger-stops.zip", lang: str = "fi",
     w_start, w_end = importer.window
     validity_str = f"{w_start.strftime('%d.%m.%Y')} – {w_end.strftime('%d.%m.%Y')}" if w_start and w_end else ""
 
-    routes = routes if routes is not None else create_sample_routes()
+    if routes is None:
+        routes = load_routes(
+            routes_path) if routes_path else create_sample_routes()
     validate_routes(routes, importer.station_names)
     renderer = TimetableBookRenderer(output_pdf, lang=lang)
     compiler = TableCompiler(max_columns_per_page=renderer.columns_per_page(), lang=lang, window=importer.window,
@@ -250,14 +254,20 @@ def _parse_date(s: str) -> date:
 def main(argv=None):
     p = argparse.ArgumentParser(
         description="Build VR timetable books (PDF) from a Digitraffic GTFS feed.")
-    p.add_argument("--gtfs", default="gtfs-passenger-stops.zip")
+    p.add_argument("--gtfs", default="gtfs-passenger-stops.zip",
+                   help="path to GTFS zip file (default: gtfs-passenger-stops.zip)")
+    p.add_argument("--routes", default=ROUTES_FILE,
+                   help="path to routes JSON file (default: routes.json)")
+    p.add_argument("-o", "--output", default=None,
+                   help="output PDF filename or pattern (default: taskuaikataulu_{LANG}.pdf)")
     p.add_argument("--start", type=_parse_date,
                    help="first date of the book period (YYYY-MM-DD)")
     p.add_argument("--end", type=_parse_date,
                    help="last date of the book period (YYYY-MM-DD)")
     p.add_argument("--lang", nargs="+",
                    default=["fi", "sv"], choices=["fi", "sv"])
-    p.add_argument("--outdir", default=".")
+    p.add_argument("--outdir", default=".",
+                   help="output directory (default: current directory)")
     p.add_argument("--map", default=None,
                    help="path to map SVG file (default: map/map.svg)")
     p.add_argument("--notes", type=int, default=0,
@@ -269,16 +279,40 @@ def main(argv=None):
             f"[ERROR] Could not find '{args.gtfs}'. Please place it in the script directory.")
         sys.exit(1)
 
+    if not os.path.exists(args.routes):
+        print(
+            f"[ERROR] Could not find routes file '{args.routes}'.")
+        sys.exit(1)
+
     try:
+        routes = load_routes(args.routes)
         importer = GTFSImporter(args.gtfs)
         trips = importer.load_feed(args.start, args.end)
         os.makedirs(args.outdir, exist_ok=True)
+
         for lang in args.lang:
-            out = os.path.join(
-                args.outdir, f"taskuaikataulu_{lang.upper()}.pdf")
+            if args.output:
+                if "{lang}" in args.output or "{LANG}" in args.output:
+                    filename = args.output.format(
+                        lang=lang.lower(), LANG=lang.upper())
+                elif len(args.lang) > 1:
+                    base, ext = os.path.splitext(args.output)
+                    filename = f"{base}_{lang.upper()}{ext or '.pdf'}"
+                else:
+                    filename = args.output
+                out = os.path.join(args.outdir, filename) if not os.path.dirname(
+                    filename) else filename
+            else:
+                out = os.path.join(
+                    args.outdir, f"taskuaikataulu_{lang.upper()}.pdf")
+
+            out_dir = os.path.dirname(out)
+            if out_dir:
+                os.makedirs(out_dir, exist_ok=True)
+
             compile_book(args.gtfs, lang=lang, output_pdf=out,
-                         importer=importer, all_trips=trips, map_path=args.map,
-                         notes_pages=args.notes)
+                         importer=importer, all_trips=trips, routes=routes,
+                         map_path=args.map, notes_pages=args.notes)
     except ValueError as e:
         print(f"[ERROR] {e}")
         sys.exit(2)
