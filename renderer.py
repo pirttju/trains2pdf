@@ -325,6 +325,26 @@ class TimetableBookRenderer:
         c.line(sc.MARGIN_LEFT, rule_y, sc.PAGE_WIDTH - sc.MARGIN_RIGHT, rule_y)
         return rule_y
 
+    def _wrap_footnote(self, segs: List[Tuple[str, bool]], max_w: float) -> List[List[Tuple[str, bool]]]:
+        """Wrap (text, bold) footnote segments across lines fitting within max_w."""
+        lines, cur_line, cur_w = [], [], 0.0
+        fs = sc.TEXT_SIZE
+        for text, bold in segs:
+            font = sc.FONT_CONDENSED_BOLD if bold else sc.FONT_CONDENSED
+            for i, word in enumerate(text.split(" ")):
+                piece = (" " if i > 0 else "") + word
+                w = self.pdf.stringWidth(piece, font, fs)
+                if cur_line and cur_w + w > max_w:
+                    lines.append(cur_line)
+                    cur_line, cur_w = [
+                        (word, bold)], self.pdf.stringWidth(word, font, fs)
+                else:
+                    cur_line.append((piece, bold))
+                    cur_w += w
+        if cur_line:
+            lines.append(cur_line)
+        return lines or [[("", False)]]
+
     # ---------------------------------------------------------------- cover
     def _find_cover_image(self) -> Optional[str]:
         candidate = getattr(sc, "COVER_IMAGE_PATH", None)
@@ -899,7 +919,10 @@ class TimetableBookRenderer:
                 unique_notes.append(col.note)
 
         if unique_notes:
-            min_fy = (table_bottom - 9.5) - (len(unique_notes) - 1) * 8.0
+            max_w = sc.CONTENT_WIDTH - (2 * sc.FOOTNOTE_MARK_RADIUS + 2.2)
+            total_lines = sum(len(self._wrap_footnote(n, max_w))
+                              for n in unique_notes)
+            min_fy = (table_bottom - 9.5) - (total_lines - 1) * 8.0
             actual_bottom = min_fy - 2.0
         else:
             actual_bottom = table_bottom
@@ -1109,25 +1132,24 @@ class TimetableBookRenderer:
         top_fy = table_bottom - 9.5
         fx, fy = x0, top_fy
         min_fy = top_fy
+        max_w = sc.CONTENT_WIDTH - (2 * sc.FOOTNOTE_MARK_RADIUS + 2.2)
+        text_x = fx + 2 * sc.FOOTNOTE_MARK_RADIUS + 2.2
+
         for letter, segs in footnotes:
-            if fy < sc.MARGIN_BOTTOM:
-                fx += 170.0
-                fy = top_fy
-                if fy < sc.MARGIN_BOTTOM or fx > sc.PAGE_WIDTH - sc.MARGIN_RIGHT - 150:
-                    print(
-                        f"[WARN] Table {route.table_id}: no room for footnotes {letter}..")
-                    break
-            self._draw_footnote_mark(
-                fx + sc.FOOTNOTE_MARK_RADIUS, fy + 2.1, letter)
-            tx = fx + 2 * sc.FOOTNOTE_MARK_RADIUS + 2.2
-            c.setFillColor(sc.COLOR_TEXT_BLACK)
-            for text, bold in segs:
-                font = sc.FONT_CONDENSED_BOLD if bold else sc.FONT_CONDENSED
-                c.setFont(font, fs)
-                c.drawString(tx, fy, text)
-                tx += c.stringWidth(text, font, fs)
-            min_fy = min(min_fy, fy)
-            fy -= 8.0
+            lines = self._wrap_footnote(segs, max_w)
+            for line_idx, line in enumerate(lines):
+                if line_idx == 0:
+                    self._draw_footnote_mark(
+                        fx + sc.FOOTNOTE_MARK_RADIUS, fy + 2.1, letter)
+                tx = text_x
+                c.setFillColor(sc.COLOR_TEXT_BLACK)
+                for text, bold in line:
+                    font = sc.FONT_CONDENSED_BOLD if bold else sc.FONT_CONDENSED
+                    c.setFont(font, fs)
+                    c.drawString(tx, fy, text)
+                    tx += c.stringWidth(text, font, fs)
+                min_fy = min(min_fy, fy)
+                fy -= 8.0
 
         if not columns:
             c.setFillColor(sc.COLOR_TEXT_BLACK)
