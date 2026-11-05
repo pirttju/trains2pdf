@@ -1,6 +1,7 @@
 # Project directories
 data/
 temp/
+fonts/*.ttf
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
