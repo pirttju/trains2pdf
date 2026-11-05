@@ -115,7 +115,8 @@ class GTFSImporter:
             stops_rows = self._read_csv(z, 'stops.txt')
             translations_rows = self._read_csv(z, 'translations.txt')
             feed_info_rows = self._read_csv(z, 'feed_info.txt')
-            routes_rows = {r['route_id']                           : r for r in self._read_csv(z, 'routes.txt')}
+            routes_rows = {r['route_id'].strip(): r for r in self._read_csv(
+                z, 'routes.txt') if 'route_id' in r}
             trips_rows = self._read_csv(z, 'trips.txt')
             stop_times_rows = self._read_csv(z, 'stop_times.txt')
             calendar_rows = self._read_csv(z, 'calendar.txt')
@@ -129,7 +130,6 @@ class GTFSImporter:
                                       _parse_gtfs_date(fi['feed_end_date']))
 
         # Book window (inclusive)
-        # Default end = day before the next timetable change after the chosen start.
         today = today or date.today()
         default_start = self.feed_validity[0] or today
         if today > default_start and (self.feed_validity[1] is None or today <= self.feed_validity[1]):
@@ -143,31 +143,79 @@ class GTFSImporter:
                 f"Invalid date window: start {v_start} is after end {v_end}")
         self.window = (v_start, v_end)
 
-        # 2. Swedish translations (table_name=stops, field_name=stop_name, field_value=<fi name>)
-        sv_translations: Dict[str, str] = {}
+        # 2. Swedish translations (supports both field_value and record_id format)
+        sv_translations_by_val: Dict[str, str] = {}
+        sv_translations_by_id: Dict[str, str] = {}
         for tr in translations_rows:
             if tr.get('table_name') == 'stops' and tr.get('field_name') == 'stop_name' and tr.get('language') == 'sv':
-                sv_translations[tr.get('field_value', '')] = tr.get(
-                    'translation', '')
+                trans = tr.get('translation', '').strip()
+                if tr.get('field_value'):
+                    sv_translations_by_val[tr['field_value'].strip()] = trans
+                if tr.get('record_id'):
+                    sv_translations_by_id[tr['record_id'].strip()] = trans
 
-        # 3. Stops & platforms: platform stop_id (HKI_0) -> station code (HKI)
-        platform_to_station_code: Dict[str, str] = {}
+        # 3. Stops & platforms: resolve any platform/child stop_id to the top-level main station code
+        stops_by_id: Dict[str, dict] = {}
         for s in stops_rows:
-            sid = s['stop_id']
+            sid = (s.get('stop_id') or '').strip()
+            if sid:
+                stops_by_id[sid] = s
+
+        def resolve_main_station_id(sid: str) -> str:
+            """Traverse parent_station references up to the main station (location_type == '1')."""
+            curr = sid
+            visited = set()
+            while curr and curr not in visited:
+                visited.add(curr)
+                s = stops_by_id.get(curr)
+                if not s:
+                    break
+                loc_type = (s.get('location_type') or '0').strip()
+                parent = (s.get('parent_station') or '').strip()
+                # If we've reached a designated main station
+                if loc_type == '1':
+                    return curr
+                if parent:
+                    curr = parent
+                else:
+                    break
+
+            # If no parent_station points to a location_type == '1', check if the stop code
+            # is encoded as a prefix (e.g. HKI_0 -> HKI)
+            prefix = curr.split('_')[0]
+            if prefix != curr and prefix in stops_by_id:
+                return prefix
+            return curr
+
+        # Pass 3A: Register all main parent stations (location_type == '1') first
+        self.station_names.clear()
+        self.station_coords.clear()
+        for sid, s in stops_by_id.items():
             loc_type = (s.get('location_type') or '0').strip()
-            parent = (s.get('parent_station') or '').strip()
-            name = (s.get('stop_name') or '').strip()
             if loc_type == '1':
-                st_code = sid
-                self.station_names[st_code] = {
-                    'fi': name, 'sv': sv_translations.get(name) or name}
-            else:
-                st_code = parent if parent else sid.split('_')[0]
-                if st_code not in self.station_names and name:
-                    self.station_names[st_code] = {
-                        'fi': name, 'sv': sv_translations.get(name) or name}
+                name = (s.get('stop_name') or '').strip()
+                sv_name = sv_translations_by_id.get(
+                    sid) or sv_translations_by_val.get(name) or name
+                self.station_names[sid] = {'fi': name, 'sv': sv_name}
+                try:
+                    self.station_coords[sid] = (
+                        float(s['stop_lat']), float(s['stop_lon']))
+                except (KeyError, TypeError, ValueError):
+                    pass
+
+        # Pass 3B: Map all platform/child IDs to the main station ID, backfilling metadata if needed
+        platform_to_station_code: Dict[str, str] = {}
+        for sid, s in stops_by_id.items():
+            st_code = resolve_main_station_id(sid)
             platform_to_station_code[sid] = st_code
-            if loc_type == '1' or st_code not in self.station_coords:
+            name = (s.get('stop_name') or '').strip()
+
+            if st_code not in self.station_names and name:
+                sv_name = sv_translations_by_id.get(
+                    st_code) or sv_translations_by_val.get(name) or name
+                self.station_names[st_code] = {'fi': name, 'sv': sv_name}
+
+            if st_code not in self.station_coords:
                 try:
                     self.station_coords[st_code] = (
                         float(s['stop_lat']), float(s['stop_lon']))
@@ -177,7 +225,7 @@ class GTFSImporter:
         # 4. Calendar -> concrete run dates inside the window
         run_dates: Dict[str, Set[date]] = {}
         for row in calendar_rows:
-            sid = row['service_id']
+            sid = row['service_id'].strip()
             weekdays = {i for i, k in enumerate(self.WEEKDAY_KEYS) if (
                 row.get(k) or '').strip() == '1'}
             c_start = max(_parse_gtfs_date(row['start_date']), v_start)
@@ -187,7 +235,7 @@ class GTFSImporter:
             run_dates[sid] = dates
 
         for row in calendar_dates_rows:
-            sid = row['service_id']
+            sid = row['service_id'].strip()
             c_date = _parse_gtfs_date(row['date'])
             ex = (row.get('exception_type') or '').strip()
             dates = run_dates.setdefault(sid, set())
@@ -201,15 +249,19 @@ class GTFSImporter:
         # 5. Stop times grouped by trip, ordered by stop_sequence
         by_trip: Dict[str, List[dict]] = defaultdict(list)
         for st in stop_times_rows:
-            by_trip[st['trip_id']].append(st)
+            by_trip[st['trip_id'].strip()].append(st)
 
         def build_stops(rows: List[dict]) -> List[StopCall]:
             rows = sorted(rows, key=lambda x: int(x.get('stop_sequence') or 0))
             out: List[StopCall] = []
             for i, st in enumerate(rows):
-                platform_id = st['stop_id']
+                platform_id = (st.get('stop_id') or '').strip()
+                # Resolve via map, or fallback to prefix mapping / prefix
                 st_code = platform_to_station_code.get(
-                    platform_id, platform_id.split('_')[0])
+                    platform_id,
+                    platform_to_station_code.get(platform_id.split('_')[
+                                                 0], platform_id.split('_')[0])
+                )
                 arr = self.parse_time(st.get('arrival_time'))
                 dep = self.parse_time(st.get('departure_time'))
                 if arr is None:
@@ -233,30 +285,26 @@ class GTFSImporter:
         # 6. Assemble train trips
         trips_list: List[TrainTrip] = []
         for tr in trips_rows:
-            tid = tr['trip_id']
-            dates = run_dates.get(tr['service_id'])
+            tid = tr['trip_id'].strip()
+            dates = run_dates.get(tr['service_id'].strip())
             if not dates:
                 continue  # does not run inside the window
             rows = by_trip.get(tid)
             if not rows:
                 continue
 
-            route_info = routes_rows.get(tr.get('route_id', ''), {})
+            route_info = routes_rows.get(tr.get('route_id', '').strip(), {})
             # 102=long distance, 109=commuter
             route_type = (route_info.get('route_type') or '102').strip()
             ttype, tnum = parse_train_name(tr.get('trip_short_name', ''),
                                            route_info.get('route_short_name', ''), tid)
 
-            # Services: only what the feed actually states. Digitraffic gives bikes_allowed;
-            # wheelchair_accessible is 0 (unknown) everywhere and dining/sleeper cars are not in
-            # GTFS, so nothing else is shown.
             services: Set[ServiceType] = set()
             if (tr.get('bikes_allowed') or '').strip() == '1':
                 services.add(ServiceType.BICYCLE)
             if (tr.get('wheelchair_accessible') or '').strip() == '1':
                 services.add(ServiceType.WHEELCHAIR)
-            # every VR night train (PYO) carries sleeping cars
-            if ttype == "PYO":
+            if ttype == "PYO" or route_type == "105":
                 services.add(ServiceType.SLEEPER)
 
             trips_list.append(TrainTrip(
@@ -265,8 +313,8 @@ class GTFSImporter:
                 train_type=ttype,
                 run_dates=set(dates),
                 route_type=route_type,
-                train_class=TrainClass.CLASS_2 if (
-                    ttype == "HDM" or ttype == "H" or ttype == "PYO" or route_type == "109") else TrainClass.CLASS_1_2,
+                train_class=TrainClass.CLASS_1_2 if (
+                    ttype == "IC" or ttype == "S" or ttype == "SP" or route_type == "101") else TrainClass.CLASS_2,
                 services=services,
                 stops=build_stops(rows),
             ))
