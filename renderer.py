@@ -945,9 +945,9 @@ class TimetableBookRenderer:
         table_h = self.compute_table_height(
             route, columns, show_banner=show_banner)
 
-        # If a table is already on the page, verify if this table fits as the second table
+        # If a table is already on the page, verify if this table fits as the second or third table
         if self.tables_on_page > 0:
-            if not allow_stacking or self.tables_on_page >= 2 or (self.cursor_y - gap - table_h < sc.MARGIN_BOTTOM):
+            if not allow_stacking or self.tables_on_page >= 3 or (self.cursor_y - gap - table_h < sc.MARGIN_BOTTOM):
                 self._finish_page()
                 shares_title = False
                 show_banner = True
@@ -1164,8 +1164,8 @@ class TimetableBookRenderer:
         self.cursor_y = actual_bottom
         rendered_page = self.current_page_num
 
-        # Finish page if stacking was not requested or page has reached 2 tables
-        if not allow_stacking or self.tables_on_page >= 2:
+        # Finish page if stacking was not requested or page has reached 3 tables
+        if not allow_stacking or self.tables_on_page >= 3:
             self._finish_page()
 
         return rendered_page

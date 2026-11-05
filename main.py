@@ -167,7 +167,7 @@ def compile_book(gtfs_path: str = "gtfs-passenger-stops.zip", lang: str = "fi",
             table_h = renderer.compute_table_height(
                 route, col_chunk, show_banner=show_banner)
             if tables_on_page > 0:
-                if tables_on_page >= 2 or (cursor_y - gap - table_h < sc.MARGIN_BOTTOM):
+                if tables_on_page >= 3 or (cursor_y - gap - table_h < sc.MARGIN_BOTTOM):
                     sim_page += 1
                     cursor_y = sc.PAGE_HEIGHT - sc.MARGIN_TOP
                     tables_on_page = 0
@@ -181,7 +181,7 @@ def compile_book(gtfs_path: str = "gtfs-passenger-stops.zip", lang: str = "fi",
             tables_on_page += 1
             sim_page_title = route_title
             cursor_y = cursor_y - gap - table_h
-            if tables_on_page >= 2:
+            if tables_on_page >= 3:
                 sim_page += 1
                 cursor_y = sc.PAGE_HEIGHT - sc.MARGIN_TOP
                 tables_on_page = 0
