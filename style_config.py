@@ -14,9 +14,9 @@ from reportlab.pdfbase.ttfonts import TTFont
 PAGE_WIDTH = 12.5 * cm
 PAGE_HEIGHT = 17.6 * cm
 
-# Margins (booklet: content starts 25.5 pt from the edge, banner top 17.3 pt from the top)
-MARGIN_LEFT = 25.5
-MARGIN_RIGHT = 25.5
+# Margins (booklet: content starts 22.5 pt from the edge, banner top 17.3 pt from the top)
+MARGIN_LEFT = 22.5
+MARGIN_RIGHT = 22.5
 MARGIN_TOP = 17.3
 MARGIN_BOTTOM = 28.0
 
@@ -53,10 +53,10 @@ BANNER_NUMBER_SIZE = 13.5
 BANNER_TITLE_SIZE = 9.5
 
 # km + station name + dot leaders, up to the first train column
-STATION_COL_WIDTH = 82.6
+STATION_COL_WIDTH = 79.6
 KM_RIGHT = 12.4                 # km figures right-aligned this far from the margin
 NAME_X = 14.5                   # station name starts this far from the margin
-TRAIN_COL_PITCH = 26.0          # train column width
+TRAIN_COL_PITCH = 22.9          # train column width
 HEADER_HEIGHT = 64.5            # banner bottom -> rule above the first station row
 ROW_PITCH = 7.03                # baseline to baseline
 FIRST_BASELINE_BELOW_RULE = 6.2
