@@ -2,6 +2,7 @@ from models import RouteDefinition, TrainTrip, StopCall, format_minutes
 from typing import List, Tuple, Dict, Set, Optional
 from statistics import median
 from datetime import date, timedelta
+import heapq
 import math
 
 """
@@ -239,6 +240,7 @@ class CompiledColumn:
         self.trip = trip
         self.days_str = days_str
         self.times: Dict[int, str] = {}       # keyed by row index
+        self.minutes: Dict[int, int] = {}     # main-row times in minutes, keyed by row index
         self.run_dates: Set[date] = set(trip.run_dates)
         self.trip_ids: Set[str] = {trip.trip_id}
         self.sort_key: int = 0
@@ -333,6 +335,7 @@ class TableCompiler:
                 continue
 
             cells: Dict[int, str] = {}
+            minutes: Dict[int, int] = {}
             for row_idx, row in enumerate(rows):
                 if row.is_connection:
                     continue
@@ -373,6 +376,8 @@ class TableCompiler:
                                 paired or call.departure is not None) else call.arrival
 
                     cells[row_idx] = format_minutes(t)
+                    if t is not None:
+                        minutes[row_idx] = t
                 elif m.first_k < k < m.last_k:
                     cells[row_idx] = "|" if self._passes_through(
                         m, k, code) else ":"
@@ -388,6 +393,7 @@ class TableCompiler:
             else:
                 col = CompiledColumn(trip, "")
                 col.times = cells
+                col.minutes = minutes
                 groups[sig] = col
                 group_match[sig] = m
 
@@ -404,11 +410,10 @@ class TableCompiler:
         # 3. connection rows
         self._fill_connections(route, cols, matches, all_trips)
 
-        # 4. sort by estimated departure from the table origin
+        # 4. sort by estimated departure from the table origin, keeping the times on each
+        #    row in order wherever two trains share a row (issue #1)
         self._assign_sort_keys(cols, matches, len(main_codes))
-        order = sorted(range(len(cols)), key=lambda i: (
-            cols[i].sort_key, _num_key(cols[i].trip.train_number)))
-        compiled_cols = [cols[i] for i in order]
+        compiled_cols = [cols[i] for i in _order_columns(cols)]
 
         # 5. paginate
         return [compiled_cols[i:i + self.max_columns] for i in range(0, len(compiled_cols), self.max_columns)]
@@ -545,6 +550,57 @@ class TableCompiler:
                                 best = (wait, t_c)
                 if best:
                     col.times[row_idx] = format_minutes(best[1])
+
+
+def _order_columns(cols: List[CompiledColumn]) -> List[int]:
+    """Column order: by the estimated origin departure (`sort_key`), but two trains that share a
+    table row always appear in the order of their times on the first row they share. The estimate
+    alone fails for trains that run faster or slower than usual (issue #1): a slow train can get an
+    earlier key than a train starting mid-table, yet reach that station after it.
+
+    Pairwise "earlier on the first shared row" constraints are ordered topologically, taking the
+    lowest estimated key whenever there is a choice. Constraints that contradict each other (a
+    cycle) are broken by releasing the waiting column with the lowest key."""
+    n = len(cols)
+    base = sorted(range(n), key=lambda i: (
+        cols[i].sort_key, _num_key(cols[i].trip.train_number)))
+    rank = {i: r for r, i in enumerate(base)}
+
+    def local(i: int, row: int) -> int:
+        return (cols[i].minutes[row] - DAY_START_MINUTES) % 1440
+
+    succ: List[List[int]] = [[] for _ in range(n)]
+    indeg = [0] * n
+    for a in range(n):
+        for b in range(a + 1, n):
+            for row in sorted(cols[a].minutes.keys() & cols[b].minutes.keys()):
+                ta, tb = local(a, row), local(b, row)
+                if ta != tb:
+                    first, second = (a, b) if ta < tb else (b, a)
+                    succ[first].append(second)
+                    indeg[second] += 1
+                    break
+
+    ready = [(rank[i], i) for i in range(n) if indeg[i] == 0]
+    heapq.heapify(ready)
+    done = [False] * n
+    order: List[int] = []
+    while len(order) < n:
+        if not ready:  # contradictory constraints: release the lowest-key waiting column
+            i = min((i for i in range(n) if not done[i]), key=rank.__getitem__)
+            indeg[i] = 0
+            heapq.heappush(ready, (rank[i], i))
+        _, i = heapq.heappop(ready)
+        if done[i]:
+            continue
+        done[i] = True
+        order.append(i)
+        for j in succ[i]:
+            if not done[j]:
+                indeg[j] -= 1
+                if indeg[j] == 0:
+                    heapq.heappush(ready, (rank[j], j))
+    return order
 
 
 def _num_key(num: str):
