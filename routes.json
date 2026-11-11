@@ -1366,30 +1366,6 @@
         "connection": false
       },
       {
-        "station": "OU",
-        "km": 586,
-        "arrival": false,
-        "connection": false
-      },
-      {
-        "station": "VTI",
-        "km": 612,
-        "arrival": false,
-        "connection": false
-      },
-      {
-        "station": "RKI",
-        "km": 633,
-        "arrival": false,
-        "connection": false
-      },
-      {
-        "station": "KML",
-        "km": 668,
-        "arrival": false,
-        "connection": false
-      },
-      {
         "station": "OL",
         "km": 680,
         "arrival": true,
@@ -1502,38 +1478,8 @@
         "connection": false
       },
       {
-        "station": "KML",
-        "km": 327,
-        "arrival": false,
-        "connection": false
-      },
-      {
-        "station": "RKI",
-        "km": 362,
-        "arrival": false,
-        "connection": false
-      },
-      {
-        "station": "VTI",
-        "km": 383,
-        "arrival": false,
-        "connection": false
-      },
-      {
-        "station": "OU",
-        "km": 409,
-        "arrival": false,
-        "connection": false
-      },
-      {
         "station": "YV",
         "km": 437,
-        "arrival": false,
-        "connection": false
-      },
-      {
-        "station": "KNS",
-        "km": 476,
         "arrival": false,
         "connection": false
       },
@@ -1631,6 +1577,7 @@
       [
         "LPA",
         "KHA",
+        "HM",
         "PNÄ",
         "KOK",
         "KNS",
@@ -1744,6 +1691,12 @@
       {
         "station": "KHA",
         "km": 383,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "HM",
+        "km": 401,
         "arrival": false,
         "connection": false
       },
@@ -1871,6 +1824,7 @@
       [
         "LPA",
         "KHA",
+        "HM",
         "PNÄ",
         "KOK",
         "KNS",
@@ -2006,6 +1960,12 @@
         "connection": false
       },
       {
+        "station": "HM",
+        "km": 582,
+        "arrival": false,
+        "connection": false
+      },
+      {
         "station": "KHA",
         "km": 600,
         "arrival": false,
@@ -2105,28 +2065,14 @@
   },
   {
     "table_id": "8",
-    "title_fi": "Turku–Tampere–Jyväskylä–Joensuu",
-    "title_sv": "Åbo–Tammerfors–Jyväskylä–Joensuu",
+    "title_fi": "Turku–Tampere",
+    "title_sv": "Åbo–Tammerfors",
     "filter_groups": [
       [
         "TKU",
         "LM",
         "HP",
         "TL"
-      ],
-      [
-        "OV",
-        "JÄS",
-        "JY",
-        "HKS"
-      ],
-      [
-        "PM",
-        "VAR",
-        "HNV",
-        "VIH",
-        "VNJ",
-        "JNS"
       ]
     ],
     "include_commuter": false,
@@ -2172,232 +2118,62 @@
         "km": 171,
         "arrival": true,
         "connection": false
-      },
-      {
-        "station": "TPE",
-        "km": 171,
-        "arrival": false,
-        "connection": false
-      },
-      {
-        "station": "OV",
-        "km": 213,
-        "arrival": false,
-        "connection": false
-      },
-      {
-        "station": "JÄS",
-        "km": 269,
-        "arrival": false,
-        "connection": false
-      },
-      {
-        "station": "JY",
-        "km": 326,
-        "arrival": true,
-        "connection": false
-      },
-      {
-        "station": "JY",
-        "km": 326,
-        "arrival": false,
-        "connection": false
-      },
-      {
-        "station": "HKS",
-        "km": 367,
-        "arrival": false,
-        "connection": false
-      },
-      {
-        "station": "PM",
-        "km": 406,
-        "arrival": true,
-        "connection": false
-      },
-      {
-        "station": "PM",
-        "km": 406,
-        "arrival": false,
-        "connection": false
-      },
-      {
-        "station": "VAR",
-        "km": 455,
-        "arrival": false,
-        "connection": false
-      },
-      {
-        "station": "HNV",
-        "km": 498,
-        "arrival": false,
-        "connection": false
-      },
-      {
-        "station": "VIH",
-        "km": 520,
-        "arrival": false,
-        "connection": false
-      },
-      {
-        "station": "VNJ",
-        "km": 556,
-        "arrival": false,
-        "connection": false
-      },
-      {
-        "station": "JNS",
-        "km": 589,
-        "arrival": true,
-        "connection": false
       }
     ]
   },
   {
     "table_id": "8",
-    "title_fi": "Joensuu–Jyväskylä–Tampere–Turku",
-    "title_sv": "Joensuu–Jyväskylä–Tammerfors–Åbo",
+    "title_fi": "Tampere–Turku",
+    "title_sv": "Tammerfors–Åbo",
     "filter_groups": [
       [
         "TKU",
         "LM",
         "HP",
         "TL"
-      ],
-      [
-        "OV",
-        "JÄS",
-        "JY",
-        "HKS"
-      ],
-      [
-        "PM",
-        "VAR",
-        "HNV",
-        "VIH",
-        "VNJ",
-        "JNS"
       ]
     ],
     "include_commuter": false,
     "rows": [
       {
-        "station": "JNS",
+        "station": "TPE",
         "km": 0,
         "arrival": false,
         "connection": false
       },
       {
-        "station": "VNJ",
-        "km": 33,
-        "arrival": false,
-        "connection": false
-      },
-      {
-        "station": "VIH",
-        "km": 69,
-        "arrival": false,
-        "connection": false
-      },
-      {
-        "station": "HNV",
-        "km": 91,
-        "arrival": false,
-        "connection": false
-      },
-      {
-        "station": "VAR",
-        "km": 134,
-        "arrival": false,
-        "connection": false
-      },
-      {
-        "station": "PM",
-        "km": 183,
-        "arrival": true,
-        "connection": false
-      },
-      {
-        "station": "PM",
-        "km": 183,
-        "arrival": false,
-        "connection": false
-      },
-      {
-        "station": "HKS",
-        "km": 222,
-        "arrival": false,
-        "connection": false
-      },
-      {
-        "station": "JY",
-        "km": 263,
-        "arrival": true,
-        "connection": false
-      },
-      {
-        "station": "JY",
-        "km": 263,
-        "arrival": false,
-        "connection": false
-      },
-      {
-        "station": "JÄS",
-        "km": 320,
-        "arrival": false,
-        "connection": false
-      },
-      {
-        "station": "OV",
-        "km": 376,
-        "arrival": false,
-        "connection": false
-      },
-      {
-        "station": "TPE",
-        "km": 418,
-        "arrival": true,
-        "connection": false
-      },
-      {
-        "station": "TPE",
-        "km": 418,
-        "arrival": false,
-        "connection": false
-      },
-      {
         "station": "TL",
-        "km": 458,
+        "km": 40,
         "arrival": false,
         "connection": false
       },
       {
         "station": "HP",
-        "km": 500,
+        "km": 82,
         "arrival": false,
         "connection": false
       },
       {
         "station": "LM",
-        "km": 520,
+        "km": 102,
         "arrival": false,
         "connection": false
       },
       {
         "station": "TKU",
-        "km": 586,
+        "km": 168,
         "arrival": true,
         "connection": false
       },
       {
         "station": "TKU",
-        "km": 586,
+        "km": 168,
         "arrival": false,
         "connection": false
       },
       {
         "station": "TUS",
-        "km": 589,
+        "km": 171,
         "arrival": true,
         "connection": false
       }
@@ -2659,8 +2435,8 @@
   },
   {
     "table_id": "10",
-    "title_fi": "Tampere–Haapamäki–Seinäjoki",
-    "title_sv": "Tammerfors–Haapamäki–Seinäjoki",
+    "title_fi": "Tampere–Haapamäki–Jyväskylä",
+    "title_sv": "Tammerfors–Haapamäki–Jyväskylä",
     "filter_groups": [
       [
         "OV",
@@ -2669,13 +2445,8 @@
         "VLP",
         "KLO",
         "HPK",
-        "PH",
-        "MY",
-        "EPZ",
-        "ÄHT",
-        "TUU",
-        "ALV",
-        "SK"
+        "KEU",
+        "PVI"
       ]
     ],
     "include_commuter": true,
@@ -2723,62 +2494,32 @@
         "connection": false
       },
       {
-        "station": "KEU",
-        "km": 16,
-        "arrival": true,
-        "connection": true
-      },
-      {
-        "station": "KEU",
-        "km": 16,
-        "arrival": false,
-        "connection": true
-      },
-      {
         "station": "HPK",
         "km": 114,
         "arrival": false,
         "connection": false
       },
       {
-        "station": "PH",
-        "km": 126,
+        "station": "KEU",
+        "km": 130,
+        "arrival": true,
+        "connection": false
+      },
+      {
+        "station": "KEU",
+        "km": 130,
         "arrival": false,
         "connection": false
       },
       {
-        "station": "MY",
-        "km": 147,
+        "station": "PVI",
+        "km": 157,
         "arrival": false,
         "connection": false
       },
       {
-        "station": "EPZ",
-        "km": 153,
-        "arrival": false,
-        "connection": false
-      },
-      {
-        "station": "ÄHT",
-        "km": 159,
-        "arrival": false,
-        "connection": false
-      },
-      {
-        "station": "TUU",
-        "km": 180,
-        "arrival": false,
-        "connection": false
-      },
-      {
-        "station": "ALV",
-        "km": 187,
-        "arrival": false,
-        "connection": false
-      },
-      {
-        "station": "SK",
-        "km": 232,
+        "station": "JY",
+        "km": 192,
         "arrival": true,
         "connection": false
       }
@@ -2786,8 +2527,8 @@
   },
   {
     "table_id": "10",
-    "title_fi": "Seinäjoki–Haapamäki–Tampere",
-    "title_sv": "Seinäjoki–Haapamäki–Tammerfors",
+    "title_fi": "Jyväskylä–Haapamäki–Tampere",
+    "title_sv": "Jyväskylä–Haapamäki–Tammerfors",
     "filter_groups": [
       [
         "OV",
@@ -2795,6 +2536,197 @@
         "JJ",
         "VLP",
         "KLO",
+        "HPK",
+        "KEU",
+        "PVI"
+      ]
+    ],
+    "include_commuter": true,
+    "rows": [
+      {
+        "station": "JY",
+        "km": 0,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "PVI",
+        "km": 35,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "KEU",
+        "km": 102,
+        "arrival": true,
+        "connection": false
+      },
+      {
+        "station": "KEU",
+        "km": 102,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "HPK",
+        "km": 118,
+        "arrival": true,
+        "connection": false
+      },
+      {
+        "station": "HPK",
+        "km": 118,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "KLO",
+        "km": 132,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "VLP",
+        "km": 143,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "JJ",
+        "km": 173,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "OVK",
+        "km": 187,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "OV",
+        "km": 190,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "TPE",
+        "km": 232,
+        "arrival": true,
+        "connection": false
+      }
+    ]
+  },
+  {
+    "table_id": "11",
+    "title_fi": "Jyväskylä–Haapamäki–Seinäjoki",
+    "title_sv": "Jyväskylä–Haapamäki–Seinäjoki",
+    "filter_groups": [
+      [
+        "JY",
+        "PVI",
+        "KEU",
+        "HPK",
+        "PH",
+        "MY",
+        "EPZ",
+        "ÄHT",
+        "TUU",
+        "ALV",
+        "SK"
+      ]
+    ],
+    "include_commuter": true,
+    "rows": [
+      {
+        "station": "JY",
+        "km": 0,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "PVI",
+        "km": 35,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "KEU",
+        "km": 62,
+        "arrival": true,
+        "connection": false
+      },
+      {
+        "station": "KEU",
+        "km": 62,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "HPK",
+        "km": 78,
+        "arrival": true,
+        "connection": false
+      },
+      {
+        "station": "HPK",
+        "km": 78,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "PH",
+        "km": 90,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "MY",
+        "km": 111,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "EPZ",
+        "km": 117,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "ÄHT",
+        "km": 123,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "TUU",
+        "km": 144,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "ALV",
+        "km": 151,
+        "arrival": false,
+        "connection": false
+      },
+      {
+        "station": "SK",
+        "km": 196,
+        "arrival": true,
+        "connection": false
+      }
+    ]
+  },
+  {
+    "table_id": "11",
+    "title_fi": "Seinäjoki–Haapamäki–Jyväskylä",
+    "title_sv": "Seinäjoki–Haapamäki–Jyväskylä",
+    "filter_groups": [
+      [
+        "JY",
+        "PVI",
+        "KEU",
         "HPK",
         "PH",
         "MY",
@@ -2856,63 +2788,39 @@
         "connection": false
       },
       {
-        "station": "KEU",
-        "km": 16,
-        "arrival": true,
-        "connection": true
-      },
-      {
-        "station": "KEU",
-        "km": 16,
-        "arrival": false,
-        "connection": true
-      },
-      {
         "station": "HPK",
         "km": 118,
         "arrival": false,
         "connection": false
       },
       {
-        "station": "KLO",
-        "km": 132,
+        "station": "KEU",
+        "km": 134,
+        "arrival": true,
+        "connection": false
+      },
+      {
+        "station": "KEU",
+        "km": 134,
         "arrival": false,
         "connection": false
       },
       {
-        "station": "VLP",
-        "km": 143,
+        "station": "PVI",
+        "km": 161,
         "arrival": false,
         "connection": false
       },
       {
-        "station": "JJ",
-        "km": 173,
-        "arrival": false,
-        "connection": false
-      },
-      {
-        "station": "OVK",
-        "km": 187,
-        "arrival": false,
-        "connection": false
-      },
-      {
-        "station": "OV",
-        "km": 190,
-        "arrival": false,
-        "connection": false
-      },
-      {
-        "station": "TPE",
-        "km": 232,
+        "station": "JY",
+        "km": 196,
         "arrival": true,
         "connection": false
       }
     ]
   },
   {
-    "table_id": "11",
+    "table_id": "12",
     "title_fi": "Helsinki–Kouvola–Kotkan satama",
     "title_sv": "Helsingfors–Kouvola–Kotka hamn",
     "filter_groups": [
@@ -3076,7 +2984,7 @@
     ]
   },
   {
-    "table_id": "11",
+    "table_id": "12",
     "title_fi": "Kotkan satama–Kouvola–Helsinki",
     "title_sv": "Kotka hamn–Kouvola–Helsingfors",
     "filter_groups": [
@@ -3240,7 +3148,7 @@
     ]
   },
   {
-    "table_id": "12",
+    "table_id": "13",
     "title_fi": "Riihimäki–Lahti",
     "title_sv": "Riihimäki–Lahtis",
     "filter_groups": [
@@ -3308,7 +3216,7 @@
     ]
   },
   {
-    "table_id": "12",
+    "table_id": "13",
     "title_fi": "Lahti–Riihimäki",
     "title_sv": "Lahtis–Riihimäki",
     "filter_groups": [
@@ -3376,7 +3284,7 @@
     ]
   },
   {
-    "table_id": "13",
+    "table_id": "14",
     "title_fi": "Helsinki–Kuopio–Oulu",
     "title_sv": "Helsingfors–Kuopio–Uleåborg",
     "filter_groups": [
@@ -3570,7 +3478,7 @@
     ]
   },
   {
-    "table_id": "13",
+    "table_id": "14",
     "title_fi": "Oulu–Kuopio–Helsinki",
     "title_sv": "Uleåborg–Kuopio–Helsingfors",
     "filter_groups": [
@@ -3764,7 +3672,7 @@
     ]
   },
   {
-    "table_id": "14",
+    "table_id": "15",
     "title_fi": "Helsinki–Imatra–Joensuu–Nurmes",
     "title_sv": "Helsingfors–Imatra–Joensuu–Nurmes",
     "filter_groups": [
@@ -3927,7 +3835,7 @@
     ]
   },
   {
-    "table_id": "14",
+    "table_id": "15",
     "title_fi": "Nurmes–Joensuu–Imatra–Helsinki",
     "title_sv": "Nurmes–Joensuu–Imatra–Helsingfors",
     "filter_groups": [
@@ -4090,30 +3998,11 @@
     ]
   },
   {
-    "table_id": "15",
-    "title_fi": "Vaasa–Jyväskylä–Joensuu",
-    "title_sv": "Vasa–Jyväskylä–Joensuu",
+    "table_id": "16",
+    "title_fi": "Pieksämäki–Joensuu",
+    "title_sv": "Pieksämäki–Joensuu",
     "filter_groups": [
       [
-        "SK",
-        "TK",
-        "VS"
-      ],
-      [
-        "SK",
-        "ALV",
-        "TUU",
-        "ÄHT",
-        "MY",
-        "PH",
-        "HPK",
-        "KEU",
-        "PVI",
-        "JY"
-      ],
-      [
-        "JY",
-        "HKS",
         "PM",
         "VAR",
         "HNV",
@@ -4125,182 +4014,49 @@
     "include_commuter": true,
     "rows": [
       {
-        "station": "VS",
+        "station": "PM",
         "km": 0,
         "arrival": false,
         "connection": false
       },
       {
-        "station": "TK",
-        "km": 32,
-        "arrival": false,
-        "connection": false
-      },
-      {
-        "station": "SK",
-        "km": 74,
-        "arrival": true,
-        "connection": false
-      },
-      {
-        "station": "SK",
-        "km": 74,
-        "arrival": false,
-        "connection": false
-      },
-      {
-        "station": "ALV",
-        "km": 119,
-        "arrival": false,
-        "connection": false
-      },
-      {
-        "station": "TUU",
-        "km": 126,
-        "arrival": false,
-        "connection": false
-      },
-      {
-        "station": "ÄHT",
-        "km": 147,
-        "arrival": false,
-        "connection": false
-      },
-      {
-        "station": "EPZ",
-        "km": 153,
-        "arrival": false,
-        "connection": false
-      },
-      {
-        "station": "MY",
-        "km": 159,
-        "arrival": false,
-        "connection": false
-      },
-      {
-        "station": "PH",
-        "km": 180,
-        "arrival": false,
-        "connection": false
-      },
-      {
-        "station": "HPK",
-        "km": 192,
-        "arrival": true,
-        "connection": false
-      },
-      {
-        "station": "HPK",
-        "km": 192,
-        "arrival": false,
-        "connection": false
-      },
-      {
-        "station": "KEU",
-        "km": 208,
-        "arrival": true,
-        "connection": false
-      },
-      {
-        "station": "KEU",
-        "km": 208,
-        "arrival": false,
-        "connection": false
-      },
-      {
-        "station": "PVI",
-        "km": 235,
-        "arrival": false,
-        "connection": false
-      },
-      {
-        "station": "JY",
-        "km": 270,
-        "arrival": true,
-        "connection": false
-      },
-      {
-        "station": "JY",
-        "km": 270,
-        "arrival": false,
-        "connection": false
-      },
-      {
-        "station": "HKS",
-        "km": 311,
-        "arrival": false,
-        "connection": false
-      },
-      {
-        "station": "PM",
-        "km": 350,
-        "arrival": true,
-        "connection": false
-      },
-      {
-        "station": "PM",
-        "km": 350,
-        "arrival": false,
-        "connection": false
-      },
-      {
         "station": "VAR",
-        "km": 399,
+        "km": 49,
         "arrival": false,
         "connection": false
       },
       {
         "station": "HNV",
-        "km": 442,
+        "km": 92,
         "arrival": false,
         "connection": false
       },
       {
         "station": "VIH",
-        "km": 464,
+        "km": 114,
         "arrival": false,
         "connection": false
       },
       {
         "station": "VNJ",
-        "km": 500,
+        "km": 150,
         "arrival": false,
         "connection": false
       },
       {
         "station": "JNS",
-        "km": 533,
+        "km": 183,
         "arrival": true,
         "connection": false
       }
     ]
   },
   {
-    "table_id": "15",
-    "title_fi": "Joensuu–Jyväskylä–Vaasa",
-    "title_sv": "Joensuu–Jyväskylä–Vasa",
+    "table_id": "16",
+    "title_fi": "Joensuu–Pieksämäki",
+    "title_sv": "Joensuu–Pieksämäki",
     "filter_groups": [
       [
-        "SK",
-        "TK",
-        "VS"
-      ],
-      [
-        "SK",
-        "ALV",
-        "TUU",
-        "ÄHT",
-        "MY",
-        "PH",
-        "HPK",
-        "KEU",
-        "PVI",
-        "JY"
-      ],
-      [
-        "JY",
-        "HKS",
         "PM",
         "VAR",
         "HNV",
@@ -4346,125 +4102,11 @@
         "km": 183,
         "arrival": true,
         "connection": false
-      },
-      {
-        "station": "PM",
-        "km": 183,
-        "arrival": false,
-        "connection": false
-      },
-      {
-        "station": "HKS",
-        "km": 222,
-        "arrival": false,
-        "connection": false
-      },
-      {
-        "station": "JY",
-        "km": 263,
-        "arrival": true,
-        "connection": false
-      },
-      {
-        "station": "JY",
-        "km": 263,
-        "arrival": false,
-        "connection": false
-      },
-      {
-        "station": "PVI",
-        "km": 298,
-        "arrival": false,
-        "connection": false
-      },
-      {
-        "station": "KEU",
-        "km": 325,
-        "arrival": true,
-        "connection": false
-      },
-      {
-        "station": "KEU",
-        "km": 325,
-        "arrival": false,
-        "connection": false
-      },
-      {
-        "station": "HPK",
-        "km": 341,
-        "arrival": true,
-        "connection": false
-      },
-      {
-        "station": "HPK",
-        "km": 341,
-        "arrival": false,
-        "connection": false
-      },
-      {
-        "station": "PH",
-        "km": 353,
-        "arrival": false,
-        "connection": false
-      },
-      {
-        "station": "MY",
-        "km": 374,
-        "arrival": false,
-        "connection": false
-      },
-      {
-        "station": "EPZ",
-        "km": 380,
-        "arrival": false,
-        "connection": false
-      },
-      {
-        "station": "ÄHT",
-        "km": 386,
-        "arrival": false,
-        "connection": false
-      },
-      {
-        "station": "TUU",
-        "km": 407,
-        "arrival": false,
-        "connection": false
-      },
-      {
-        "station": "ALV",
-        "km": 414,
-        "arrival": false,
-        "connection": false
-      },
-      {
-        "station": "SK",
-        "km": 459,
-        "arrival": true,
-        "connection": false
-      },
-      {
-        "station": "SK",
-        "km": 459,
-        "arrival": false,
-        "connection": false
-      },
-      {
-        "station": "TK",
-        "km": 501,
-        "arrival": false,
-        "connection": false
-      },
-      {
-        "station": "VS",
-        "km": 533,
-        "arrival": true,
-        "connection": false
       }
     ]
   },
   {
-    "table_id": "16",
+    "table_id": "17",
     "title_fi": "Iisalmi–Ylivieska",
     "title_sv": "Idensalmi–Ylivieska",
     "filter_groups": [
@@ -4525,7 +4167,7 @@
     ]
   },
   {
-    "table_id": "16",
+    "table_id": "17",
     "title_fi": "Ylivieska–Iisalmi",
     "title_sv": "Ylivieska–Idensalmi",
     "filter_groups": [
@@ -4586,7 +4228,7 @@
     ]
   },
   {
-    "table_id": "17",
+    "table_id": "18",
     "title_fi": "Parikkala–Savonlinna",
     "title_sv": "Parikkala–Nyslott",
     "filter_groups": [
@@ -4640,7 +4282,7 @@
     ]
   },
   {
-    "table_id": "17",
+    "table_id": "18",
     "title_fi": "Savonlinna–Parikkala",
     "title_sv": "Nyslott–Parikkala",
     "filter_groups": [
@@ -4694,7 +4336,7 @@
     ]
   },
   {
-    "table_id": "18",
+    "table_id": "A",
     "title_fi": "Oulu–Tornio–Haparanda–Luleå",
     "title_sv": "Uleåborg–Torneå–Haparanda–Luleå",
     "filter_groups": [
@@ -4811,7 +4453,7 @@
     ]
   },
   {
-    "table_id": "18",
+    "table_id": "A",
     "title_fi": "Luleå–Haparanda–Tornio–Oulu",
     "title_sv": "Luleå–Haparanda–Torneå–Uleåborg",
     "filter_groups": [
