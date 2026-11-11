@@ -327,3 +327,36 @@ def test_hatch_only_when_not_running_whole_period():
     assert runs_partial_period(fridays(date(2026, 12, 18), date(2027, 3, 5)), w)
     # rare trains on single dates -> hatched
     assert runs_partial_period({date(2027, 1, 1)}, w)
+
+
+def test_columns_in_time_order_on_shared_rows():
+    """Issue #1: a slow train must not be listed before a train that starts mid-table and
+    leaves the shared station earlier, even though its estimated origin departure is earlier."""
+    from datetime import timedelta
+    from models import RouteDefinition, StationRowConfig, StopCall, TrainTrip
+    days = {date(2027, 1, 4) + timedelta(days=i) for i in range(28)}
+
+    def trip(num, calls):
+        stops = [StopCall(code, code, arr, dep, seq)
+                 for seq, (code, arr, dep) in enumerate(calls, start=1)]
+        return TrainTrip(f"T{num}", str(num), "IC", set(days), stops=stops)
+
+    def hm(s):
+        return int(s[:2]) * 60 + int(s[3:])
+
+    trips = [
+        trip(1, [("A", None, hm("06:00")), ("C", hm("06:30"), None)]),
+        trip(2, [("A", None, hm("07:00")), ("C", hm("07:30"), None)]),
+        trip(3, [("A", None, hm("08:00")), ("C", hm("09:00"), hm("09:01")),
+                 ("D", hm("09:30"), None)]),            # slow: A-C takes 60 min, median 30
+        trip(4, [("C", None, hm("08:45")), ("D", hm("09:15"), None)]),
+    ]
+    route = RouteDefinition(table_id="9", title_fi="A - D", title_sv="A - D",
+                            station_rows=[StationRowConfig("A"), StationRowConfig("C"),
+                                          StationRowConfig("D", is_arrival=True)])
+    tc = TableCompiler(max_columns_per_page=10, window=(date(2027, 1, 4), date(2027, 1, 31)))
+    cols = [c for page in tc.compile_route(route, trips) for c in page]
+    assert [c.trip.train_number for c in cols] == ["1", "2", "4", "3"]
+    for row in range(3):
+        times = [c.minutes[row] for c in cols if row in c.minutes]
+        assert times == sorted(times), f"row {row} out of order"

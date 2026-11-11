@@ -45,7 +45,7 @@ Ulkoasu on mitoitettu klassisen noin vuosina 1992-2014 käytössä olleen VR:n a
 - **Tulo- ja lähtörivit:** kun asemalla on sekä tulo- että lähtörivi, lähtöasemalta lähtevällä junalla on vain lähtöaika ja määräasemalle saapuvalla vain tuloaika.
 - **`|` (ohittaa pysähtymättä):** merkitään vain, jos asema on enintään 20 km päässä junan reitistä (asemien koordinaattien perusteella). Muuten juna on kulkenut toista rataa (merkitään `:`).
 - **Liityntärivit** (`is_connection`): rivillä näkyy myöhäisin juna, joka saapuu seuraavan pääaseman riville vähintään `min_transfer_minutes` ja enintään `max_transfer_wait_minutes` ennen pääjunan lähtöä _jokaisena_ sen kulkupäivänä. Jos pääjuna itse tulee liityntäasemalta, rivillä näkyy sen oma aika.
-- **Järjestys:** sarakkeet järjestetään arvioidun taulukon alkuaseman lähtöajan mukaan (vuorokausi alkaa klo 03). Kesken taulukon aamulla lähtevät junat tulevat siksi alkuun.
+- **Järjestys:** sarakkeet järjestetään arvioidun taulukon alkuaseman lähtöajan mukaan (vuorokausi alkaa klo 03). Kesken taulukon aamulla lähtevät junat tulevat siksi alkuun. Jos kahdella junalla on aika samalla rivillä, ne ovat aina ensimmäisen yhteisen rivin aikojen mukaisessa järjestyksessä, vaikka arvio (esim. tavallista hitaammalla junalla) antaisi toisen järjestyksen.
 
 ## Junatyyppien tunnukset
 
