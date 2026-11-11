@@ -166,6 +166,27 @@ def describe_run_days(run_dates: Set[date], window: Optional[Tuple[date, date]],
     return days_txt, segs
 
 
+def runs_partial_period(run_dates: Set[date], window: Optional[Tuple[date, date]]) -> bool:
+    """True when the train does not run through the whole timetable period, i.e. its validity
+    starts after the first or ends before the last date of the window that falls on one of its
+    running weekdays. Cancellations and extra days inside the period do not count: they are
+    exceptions shown in the footnote only (issue #3)."""
+    if not run_dates or not (window and window[0] and window[1]):
+        return False
+    dates = sorted(run_dates)
+    if len(dates) <= EXPLICIT_DATES_MAX:
+        weekdays = {d.weekday() for d in dates}
+    else:
+        weekdays, _ = summarize_run_dates(run_dates, window)
+    regular = [d for d in dates if d.weekday() in weekdays] or dates
+    w_lo, w_hi = window
+    first_expected = next((w_lo + timedelta(days=i) for i in range(7)
+                           if (w_lo + timedelta(days=i)).weekday() in weekdays), w_lo)
+    last_expected = next((w_hi - timedelta(days=i) for i in range(7)
+                          if (w_hi - timedelta(days=i)).weekday() in weekdays), w_hi)
+    return regular[0] > first_expected or regular[-1] < last_expected
+
+
 def format_run_days(run_dates: Set[date], window: Optional[Tuple[date, date]], lang: str = "fi") -> str:
     """Column header text: explicit dates for rare trains, otherwise weekdays (+ '*' if irregular)."""
     if not run_dates:
@@ -223,6 +244,8 @@ class CompiledColumn:
         self.sort_key: int = 0
         # footnote segments for irregular running days
         self.note: Optional[List[Tuple[str, bool]]] = None
+        # does not run through the whole timetable period -> hatched header
+        self.partial: bool = False
 
 
 class _TripMatch:
@@ -375,6 +398,8 @@ class TableCompiler:
         for col in cols:
             col.days_str, col.note = describe_run_days(
                 col.run_dates, self.window, self.lang)
+            col.partial = bool(col.note) and runs_partial_period(
+                col.run_dates, self.window)
 
         # 3. connection rows
         self._fill_connections(route, cols, matches, all_trips)

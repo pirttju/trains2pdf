@@ -301,3 +301,29 @@ def test_only_feed_backed_services(synthetic_loaded):
     _, trips = synthetic_loaded
     assert all(t.services <= {ServiceType.BICYCLE} for t in trips)
     assert any(ServiceType.BICYCLE in t.services for t in trips)
+
+
+def test_hatch_only_when_not_running_whole_period():
+    """Issue #3: exceptions inside the period get a footnote but no hatching."""
+    from datetime import timedelta
+    from table_compiler import runs_partial_period
+    w = (date(2026, 12, 13), date(2027, 4, 25))
+
+    def fridays(a, b):
+        out, d = set(), a
+        while d <= b:
+            if d.weekday() == 4:
+                out.add(d)
+            d += timedelta(days=1)
+        return out
+
+    # Fridays 18.12.-23.4. = the whole period, with holiday cancellations
+    full = fridays(date(2026, 12, 18), date(2027, 4, 23)) - {
+        date(2026, 12, 25), date(2027, 1, 1), date(2027, 3, 26)}
+    assert describe_run_days(full, w)[1] is not None, "exceptions get a footnote"
+    assert not runs_partial_period(full, w), "but no hatching"
+    # starts later or ends earlier than the period -> hatched
+    assert runs_partial_period(fridays(date(2027, 1, 8), date(2027, 4, 23)), w)
+    assert runs_partial_period(fridays(date(2026, 12, 18), date(2027, 3, 5)), w)
+    # rare trains on single dates -> hatched
+    assert runs_partial_period({date(2027, 1, 1)}, w)

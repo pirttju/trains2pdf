@@ -994,6 +994,9 @@ class TimetableBookRenderer:
                 letter = chr(ord("A") + len(footnotes) % 26)
                 footnotes.append((letter, col.note))
             note_letter[n] = letter
+            if not col.partial:
+                continue
+            # hatching only for trains that do not run the whole period (issue #3)
             self._draw_exception_frame(first_col_x + n * col_w, col_w, banner_bottom - 7.8,
                                        header_rule_y, table_bottom)
 
